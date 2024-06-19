@@ -1,0 +1,38 @@
+ [
+    {
+        "title": "Air Max Furyosa",
+        "description": "Nike Sportswear AIR MAX FURYOSA - Sneakers laag.",
+        "colour": "Wit\/Beige",
+        "imageUrl": "https://img01.ztat.net/article/spp-media-p1/9119aff5cd2747ff9ddca6587a4f6d6c/ac73863480114f768e1276fa74731fcb.jpg?imwidth=1800&filter=packshot",
+        "price": 159.95,
+        "sizes": [
+            "37",
+            "38",
+            "39"
+        ]
+    },
+    {
+        "title": "Air Max 270",
+        "description": "AIR MAX 270 UNISEX - Sneakers laag.",
+        "colour": "Wit\/Blue",
+        "imageUrl": "https://img01.ztat.net/article/spp-media-p1/fb1ad9bb0c533cb5972da58858dd0fcb/a8cbb2ce0c8a4b8eb0da4d5b1ab74189.jpg?imwidth=1800&filter=packshot",
+        "price": 89.95,
+        "sizes": [
+            "37",
+            "38",
+            "39"
+        ]
+    },
+    {
+        "title": "Air Max 90",
+        "description": "Nike Performance AIR MAX 90 - Sneakers laag.",
+        "colour": "Zwart\/Wit",
+        "imageUrl": "https://img01.ztat.net/article/spp-media-p1/34a22b72fb8e4dbfb4cbee17dbc615d3/9c842b7c35e84671bd8d4f7ed93c09b8.jpg?imwidth=1800&filter=packshot",
+        "price": 149.95,
+        "sizes": [
+            "37",
+            "38",
+            "39"
+        ]
+    }
+]

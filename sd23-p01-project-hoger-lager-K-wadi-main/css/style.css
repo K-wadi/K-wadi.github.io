@@ -1,0 +1,127 @@
+/* zelf toegevoegd */
+
+* {
+}
+
+body {
+  background-image: linear-gradient(rgb(239, 62, 62), rgb(148, 192, 218));
+
+  background-repeat: no-repeat;
+
+  height: 100vh;
+}
+
+header h1 {
+  background-color: antiquewhite;
+
+  padding: 10px;
+
+  width: 14%;
+
+  text-align: center;
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+  font-weight: 1000;
+}
+
+.go-button {
+  background-color: rgb(234, 255, 0);
+
+  padding: 10px;
+}
+
+.text-center go-button-container {
+  padding: 10px;
+}
+
+.container {
+  position: relative;
+
+  top: 80px;
+}
+ 
+/* gooi button */
+
+.dice-button {
+  background-color: rgb(25, 88, 215);
+
+  padding: 10px;
+}
+
+/* hoger lager*/
+
+.higher-button {
+  background-color: rgb(25, 215, 25);
+}
+
+.lower-button {
+  background-color: red;
+}
+
+/* all gemaakt */
+
+.dices {
+  padding: 10px;
+
+  column-count: 5;
+
+  column-fill: balance;
+}
+
+.headings {
+  padding: 10px;
+
+  column-count: 5;
+
+  column-fill: balance;
+}
+
+.credits {
+  column-count: 5;
+
+  column-fill: balance;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.dices-computer-player {
+  column-count: 2;
+}
+
+.dices-player {
+  column-count: 2;
+}
+
+.message {
+  column-count: 3;
+
+  column-fill: balance;
+}
+
+.message-box {
+  border: 1px solid black;
+}
+
+.controls {
+  padding: 10px;
+
+  column-count: 6;
+
+  column-fill: balance;
+}
+
+.dice {
+  font-size: 64pt;
+}
+
+button {
+  width: 100%;
+
+  padding: 10px;
+}
+

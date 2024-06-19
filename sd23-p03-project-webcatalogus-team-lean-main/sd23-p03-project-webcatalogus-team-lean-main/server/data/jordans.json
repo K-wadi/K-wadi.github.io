@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Jordan MVP",
+        "description": "Damesschoenen",
+        "colour": "Wit\/Beige",
+        "imageUrl": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/c84dcdcb-6cda-4188-bfff-17364aa0c202/jordan-mvp-damesschoenen-P36QBm.png",
+        "price": 169.99,
+        "sizes": [
+            "37",
+            "38",
+            "39"
+        ]   
+    },
+    {
+        "title": "Air Jordan 1 Mid",
+        "description": "Damesschoenen",
+        "colour": "Wit\/Groen",
+        "imageUrl": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b720303b-a097-4a59-98c8-fdedaf369ad6/air-jordan-1-mid-damesschoenen-kNhbRG.png",
+        "price": 139.99,
+        "sizes": [
+            "37",
+            "38",
+            "39"
+        ]   
+    },
+    {
+        "title": "Jordan Stadium 90",
+        "description": "Damesschoenen",
+        "colour": "Wit\/Blauw",
+        "imageUrl": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e48b21b9-405e-4697-b9b6-b9675a40bb66/jordan-stadium-90-damesschoenen-h5r9zf.png",
+        "price": 139.99,
+        "sizes": [
+            "37",
+            "38",
+            "39"
+        ]   
+    }
+]

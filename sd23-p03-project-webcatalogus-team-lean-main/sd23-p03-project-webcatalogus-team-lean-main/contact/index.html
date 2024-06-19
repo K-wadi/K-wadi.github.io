@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Icons links -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+  <title>Contact</title>
+</head>
+
+<body>
+  <!-- wrapper met de hele page erin die in grid zit-->
+  <div class="wrapper">
+
+    <!--header met navbar-->
+    <header>
+      <nav>
+        <img src="/Arian/img/MicrosoftTeams-image.png" alt="Nike Logo" class="navbar-logo">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/Dhakir/html/sale.html">Sale</a></li>
+          <li><a href="/dames/dames.html">Dameschoenen</a></li>
+          <li><a href="/Arian/herenschoenen.html">Heroenschoenen</a></li>
+          <li><a href="/sport.html" class="nav-link">Sport</a></li>
+          <li><a href="/contact/index.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--container met de contact form erin en de send button-->
+    <div class="container">
+      <form class="contact-form">
+        <div class="form-row">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" class="form-input" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" class="form-input" required>
+        </div>
+        <div class="form-row">
+          <label for="description">Description:</label>
+          <textarea id="description" name="description" class="form-input resizable" required></textarea>
+        </div>
+        <button type="submit" class="submit-button">Send</button>
+      </form>
+      <div class="thank-you-message">
+        <p>Bedankt voor je bericht!</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

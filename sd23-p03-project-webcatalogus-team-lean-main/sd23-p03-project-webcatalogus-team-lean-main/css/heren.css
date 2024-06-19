@@ -1,0 +1,53 @@
+:root{
+    --main-color: black;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header, .nav, .right-sidebar, .cards-container, footer{
+    border: 5px solid var(--main-color);
+}
+
+header{
+    grid-area: hd;
+}
+.nav{
+    grid-area: nav;
+}
+.right-sidebar{
+    grid-area: rs;
+}
+.cards-container{
+    grid-area: cc;
+}
+footer{
+    grid-area: ft;
+}
+body{
+    display: grid;
+    gap: 10px;
+    text-align: center;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 50px minmax(200px, 1fr) 50px;
+    grid-template-areas: 
+    "hd hd hd"
+    "nav cc cc"
+    "ft ft ft"
+    ;
+}
+.card, .cards-container{
+    border:  3px solid var(--main-color) ;
+}
+h1{
+    border: 2px solid var(--main-color);
+}
+.hd{
+    grid-column: 3;
+    grid-row: 3;
+}
+.img{
+    height: 40px;
+    width: 60px;
+}

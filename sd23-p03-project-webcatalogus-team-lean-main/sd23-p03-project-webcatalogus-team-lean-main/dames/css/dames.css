@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+header {
+    border: solid 2px black;
+}
+
+nav {
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.card-container {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: max-content;
+} 
+
+.shoe-card > img {
+    border: solid black 2px;
+    height: 200px;
+}
+
+.btn {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: none; 
+    border: solid 2px black;
+    font-size: 15px;
+    margin: auto;
+    padding-inline: 40px;
+    padding-block: 10px;
+}
+
+.shoe-card {
+    border: 3px solid black;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+@media screen and (max-width: 440px) {
+    nav {  
+        width: 100%;    
+        display: flex;
+        flex-direction: column; /* Verander de richting naar kolom */
+        align-items: center;
+    }
+
+    header {
+        border: solid 2px black;
+    }
+
+    .btn {
+        text-decoration: none;
+        color: black;
+        background-color: none; 
+        border: solid 2px black;
+        font-size: 10px;
+    }
+}

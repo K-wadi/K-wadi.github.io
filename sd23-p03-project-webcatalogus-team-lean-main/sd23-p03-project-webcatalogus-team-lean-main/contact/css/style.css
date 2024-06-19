@@ -1,0 +1,306 @@
+/* Definieert basisstijlvariabelen die door de hele pagina gebruikt worden. Dit omvat kleuren, lettertypen, en maten. */
+:root {
+  --bg-color-header: rgb(43, 43, 59);
+  /* Achtergrondkleur van de kopbalk */
+  --text-color: white;
+  /* Kleur van de tekst */
+  --font-family: sans-serif;
+  /* Lettertype voor de pagina */
+  --form-bg-color: rgba(255, 255, 255, 0.8);
+  /* Achtergrondkleur van het formulier */
+  --button-bg-color: #007bff;
+  /* Achtergrondkleur van knoppen */
+  --button-bg-hover-color: #0056b3;
+  /* Achtergrondkleur van knoppen bij hover (muis erover) */
+  --input-text-color: black;
+  /* Tekstkleur in invoervelden */
+  --button-text-color: white;
+  /* Tekstkleur van knoppen */
+  --input-border-radius: 8px;
+  /* Afronding van hoeken bij invoervelden */
+  --button-border-radius: 5px;
+  /* Afronding van hoeken bij knoppen */
+  --form-max-width: 500px;
+  /* Maximale breedte van het formulier */
+  --form-padding: 20px;
+  /* Binnenruimte (padding) van het formulier */
+  --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Schaduw effect rond elementen */
+  --header-height: 150px;
+  /* Hoogte van de kopbalk */
+  --space-between: 30px;
+  /* Ruimte tussen elementen */
+  --thank-you-bg-color: rgb(43, 43, 59);
+  /* Achtergrondkleur van het 'bedankt' bericht */
+  --thank-you-text-color: #ffffff;
+  /* Tekstkleur van het 'bedankt' bericht */
+}
+
+/* Reset de marges en padding van alle elementen om een consistente basis te creëren, en past basisstijlen toe. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Zorgt dat breedtes en hoogtes inclusief padding en border zijn */
+  color: var(--text-color);
+  /* Stelt de tekstkleur in */
+  font-family: var(--font-family);
+  /* Stelt het lettertype in */
+}
+
+/* Specifieke stijlen voor de body en html-elementen, inclusief een achtergrondafbeelding en layout instellingen. */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  /* Voorkomt scrollen op de pagina */
+}
+
+body {
+  background-image: url(/contact/img/wp4020906.jpg);
+  /* Achtergrondafbeelding voor de pagina */
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Zorgt dat de achtergrondafbeelding de hele pagina bedekt */
+  display: flex;
+  flex-direction: column;
+  /* Elementen binnen body worden verticaal gestapeld */
+}
+
+/* Stijlen voor de kopbalk, inclusief kleur, layout, en afmetingen. */
+header {
+  width: 100%;
+  background-color: var(--bg-color-header);
+  /* Kleur van de kopbalk */
+  height: var(--header-height);
+  /* Hoogte van de kopbalk */
+  display: flex;
+  align-items: center;
+  /* Centreert items verticaal */
+  justify-content: space-between;
+  /* Verdeelt ruimte tussen items */
+  padding: 0 20px;
+  /* Ruimte binnen de kopbalk */
+}
+
+/* Layout en styling voor navigatie-elementen binnen de kopbalk. */
+nav {
+  display: flex;
+  align-items: center;
+  /* Centreert links verticaal */
+}
+
+.navbar-logo {
+  height: 50px;
+  /* Hoogte van het logo */
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  /* Verwijdert bullets van lijst */
+  margin-left: auto;
+  /* Duwt de lijst naar rechts */
+}
+
+ul li {
+  margin: 0 10px;
+  /* Ruimte tussen navigatie-items */
+}
+
+a {
+  text-decoration: none;
+  /* Geen onderstreping bij links */
+  color: var(--text-color);
+  /* Kleur van links */
+  font-size: 16px;
+  /* Tekstgrootte van links */
+}
+
+.wrapper {
+  display: grid;
+  /* Zet de layout om naar een CSS Grid. */
+  grid-template-columns: 1fr;
+  /* Creëert een enkele kolom layout. */
+  justify-items: center;
+  /* Centreert de inhoud horizontaal. */
+  align-items: start;
+  /* Lijnt items uit aan de start van hun container. */
+  width: 100%;
+  gap: var(--space-between);
+  /* Voegt ruimte toe tussen de grid items. */
+}
+
+
+.container {
+  width: 100%;
+  /* Zorgt ervoor dat de container de volle breedte van zijn grid cel inneemt. */
+  max-width: var(--form-max-width);
+  /* Beperkt de maximale breedte om te voorkomen dat het formulier te breed wordt uitgerekt. */
+  display: block;
+  /* Schakelt terug naar block layout indien nodig voor interne flexbox uitlijningen. */
+  padding: 20px;
+  box-sizing: border-box;
+  /* Zorgt ervoor dat de padding is inbegrepen in de breedteberekening. */
+}
+
+
+.contact-form {
+  display: inline-block;
+  padding: var(--form-padding);
+  /* Padding rondom het formulier. */
+  background-color: var(--bg-color-header);
+  /* Achtergrondkleur van het formulier. */
+  border-radius: var(--input-border-radius);
+  /* Afronding van de hoeken. */
+  box-shadow: var(--shadow);
+  /* Schaduw effect rondom het formulier. */
+  min-width: 500px;
+  /* Minimale breedte van het formulier. */
+  max-width: var(--form-max-width);
+  /* Maximale breedte van het formulier. */
+}
+
+.form-row {
+  margin-bottom: 20px;
+  /* Ruimte aan de onderkant van elke rij in het formulier. */
+}
+
+.form-input {
+  color: var(--input-text-color);
+  /* Tekstkleur van de inputvelden. */
+  width: 100%;
+  /* Zorgt ervoor dat de inputvelden de volle breedte van hun container innemen. */
+  padding: 10px;
+  /* Padding in de inputvelden voor betere leesbaarheid. */
+  border-radius: var(--input-border-radius);
+  /* Afronding van de hoeken van de inputvelden. */
+  border: 1px solid #ccc;
+  /* Kleur van de rand rond de inputvelden. */
+  margin-top: 5px;
+  /* Ruimte boven de inputvelden. */
+}
+
+.submit-button {
+  background-color: var(--button-bg-color);
+  /* Achtergrondkleur van de verzendknop. */
+  color: var(--button-text-color);
+  /* Tekstkleur van de verzendknop. */
+  border: none;
+  /* Geen rand rond de verzendknop. */
+  padding: 10px 20px;
+  /* Padding in de verzendknop voor betere leesbaarheid en klikbaarheid. */
+  cursor: pointer;
+  /* Cursor verandert naar een handje om aan te geven dat het klikbaar is. */
+  border-radius: var(--button-border-radius);
+  /* Afronding van de hoeken van de verzendknop. */
+  font-size: 16px;
+  /* Tekstgrootte van de verzendknop. */
+  width: 100%;
+  /* Zorgt ervoor dat de verzendknop de volle breedte van zijn container inneemt. */
+}
+
+.submit-button:hover {
+  background-color: var(--button-bg-hover-color);
+  /* Verandert de achtergrondkleur van de verzendknop bij hover. */
+}
+
+.thank-you-message {
+  display: none;
+  /* Het bedankbericht is standaard niet zichtbaar. Dit zorgt ervoor dat het pas getoond wordt door een actie (bijvoorbeeld na het succesvol indienen van een formulier). */
+  background-color: var(--thank-you-bg-color);
+  /* Stelt de achtergrondkleur in van het bedankbericht, waarbij de kleurwaarde uit een CSS variabele wordt gehaald. */
+  color: var(--thank-you-text-color);
+  /* Definieert de tekstkleur van het bedankbericht, ook opgehaald uit een CSS variabele. */
+  padding: 10px;
+  /* Voegt ruimte toe binnen de randen van het bedankbericht, zodat de tekst niet direct tegen de rand aan staat. */
+  border-radius: var(--input-border-radius);
+  /* Rond de hoeken van het bedankbericht af met dezelfde afrondingsradius als die voor inputvelden is gedefinieerd, voor consistentie in ontwerp. */
+  box-shadow: var(--shadow);
+  /* Voegt een schaduw toe rondom het bedankbericht, gebruikmakend van de schaduwstijl gedefinieerd in een CSS variabele, wat een zwevend effect kan geven. */
+  margin-top: var(--space-between);
+  /* Voegt ruimte toe boven het bedankbericht, zodat het niet direct tegen andere elementen aan staat. De exacte grootte van de ruimte wordt bepaald door een CSS variabele. */
+}
+
+
+.resizable {
+  resize: both;
+  /* Staat toe dat het element in zowel horizontale als verticale richting aangepast kan worden. */
+  overflow: auto;
+  /* Zorgt ervoor dat content die buiten het element valt, scrollbaar is. */
+  max-width: 100%;
+  /* Beperkt de maximale breedte tot 100%. */
+  min-height: 150px;
+  /* Stelt een minimale hoogte in voor het element. */
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 100px;
+    /* Maakt de header kleiner voor kleinere schermen. */
+    flex-direction: column;
+    /* Stapelt de items verticaal. */
+    align-items: center;
+    /* Centreert items horizontaal. */
+    justify-content: center;
+    /* Centreert items verticaal. */
+    padding: 10px 0;
+    /* Past de padding aan voor boven en onder, verwijdert zij-padding. */
+  }
+
+  .navbar-logo {
+    margin-bottom: 5px;
+    /* Verkleint de ruimte onder het logo. */
+  }
+
+  .container {
+    width: 100%;
+    /* Zorgt ervoor dat de container de volledige breedte gebruikt. */
+    margin: 20px auto;
+    /* Voegt verticale marge toe voor ruimte, centreert horizontaal. */
+    padding: 10px;
+    /* Past de padding aan binnen de container. */
+    box-sizing: border-box;
+    /* Zorgt ervoor dat de padding binnen de totale breedte valt. */
+  }
+
+  nav {
+    width: 100%;
+    /* Zorgt ervoor dat de navigatie de volledige breedte gebruikt. */
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    /* Houdt de navigatie-items horizontaal. */
+    justify-content: center;
+    /* Centreert de navigatie-items horizontaal. */
+    flex-wrap: wrap;
+    /* Staat toe dat navigatie-items omvouwen als er niet genoeg ruimte is. */
+    padding: 0;
+    margin: 0;
+    /* Verwijdert standaard marge. */
+  }
+
+  nav ul li {
+    margin: 0 5px;
+    /* Voegt horizontale marge toe tussen navigatie-items. */
+  }
+
+  nav ul li a {
+    font-size: 14px;
+    /* Maakt de tekstgrootte kleiner voor een betere pasvorm. */
+    padding: 8px 12px;
+    /* Zorgt voor voldoende klikbare ruimte. */
+    display: block;
+    /* Verbeterd het klikbare gebied van de links. */
+  }
+
+  .contact-form {
+    margin: 20px auto;
+    /* Centreert het formulier met automatische marges. */
+    width: calc(100% - 40px);
+    /* Past de breedte van het formulier aan om rekening te houden met padding. */
+  }
+}

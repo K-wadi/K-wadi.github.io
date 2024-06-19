@@ -1,0 +1,419 @@
+/* CSS Variabelen */
+:root {
+    --text-color: white;
+    /* Standaard tekstkleur */
+    --item-bg-color: #fff;
+    /* Achtergrondkleur voor items */
+    --item-shadow-color: rgba(0, 0, 0, 0.2);
+    /* Schaduwkleur voor items, licht effect */
+    --item-hover-shadow-color: rgba(0, 0, 0, 0.3);
+    /* Schaduwkleur voor items bij hover, iets donkerder */
+    --item-hover-move: -10px;
+    /* Beweging naar boven voor items bij hover */
+    --header-height: 60px;
+    /* Hoogte van de header */
+    --side-image-width: 325px;
+    /* Breedte van de zijafbeeldingen */
+    --grid-gap: 20px;
+    /* Ruimte tussen grid items */
+    --font-size-large: 18px;
+    /* Grote tekstgrootte */
+    --font-size-medium: 16px;
+    /* Middelgrote tekstgrootte */
+    --font-size-small: 14px;
+    /* Kleine tekstgrootte */
+    --subcat1-bg-color: #FFEBCC;
+    /* Licht oranje achtergrondkleur */
+    --subcat1-navbar-bg-color: #FFA500;
+    /* Donker oranje kleur voor de navbar */
+    --price-color: #34342f;
+    /* Kleur voor prijsinformatie, goud-oranje */
+    --nav-hover: #FF8C00;
+    /* Hover kleur voor navbar links, donker oranje */
+    --hover-color: #34342f;
+    /* Hover kleur voor algemene links, rood-oranje */
+}
+
+/* Basisstijlen voor het hele document */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Lettertypefamilie */
+    margin: 0;
+    /* Verwijdert standaardmarge */
+    padding-top: var(--header-height);
+    /* Ruimte aan de bovenkant gelijk aan headerhoogte */
+    background-color: var(--subcat1-bg-color);
+    /* Achtergrondkleur van de pagina */
+}
+
+/* Stijl voor de wrapper */
+.wrapper {
+    display: grid; /* Gebruikt grid layout */
+    grid-template-rows: auto 1fr; /* Header neemt de hoogte die het nodig heeft, main vult de rest */
+    gap: 20px; /* Ruimte tussen de grid-items */
+    min-height: 100vh; /* Zorgt dat de wrapper minimaal de volledige hoogte van de viewport inneemt */
+  }
+  
+/* Stijlen voor de header */
+header {
+    background-color: var(--subcat1-navbar-bg-color);
+    /* Achtergrondkleur */
+    color: var(--text-color);
+    /* Tekstkleur */
+    padding: 0 20px;
+    /* Padding aan de zijkanten */
+    width: 100%;
+    /* Volledige breedte */
+    position: fixed;
+    /* Maakt de header vast bovenaan de pagina */
+    top: 0;
+    /* Positie bovenaan */
+    left: 0;
+    /* Positie aan de linkerkant */
+    z-index: 1000;
+    /* Zorgt dat de header boven andere elementen staat */
+    display: flex;
+    /* Gebruikt flexbox voor layout */
+    justify-content: space-between;
+    /* Verdeelt ruimte tussen items */
+    align-items: center;
+    /* Centreert items verticaal */
+    height: var(--header-height);
+    /* Hoogte van de header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Licht schaduweffect */
+}
+
+/* Stijlen voor de navbar en links */
+.navbar-logo {
+    height: 50px;
+    /* Hoogte van het logo */
+    width: auto;
+    /* Automatische breedte gebaseerd op de hoogte */
+}
+
+.navbar {
+    display: flex;
+    /* Flexbox voor layout */
+    justify-content: center;
+    /* Centreert items horizontaal */
+    align-items: center;
+    /* Centreert items verticaal */
+    width: 100%;
+    /* Volledige breedte */
+    list-style: none;
+    /* Geen lijststijlen */
+    margin: 0;
+    /* Geen marge */
+    padding: 20px 0;
+    /* Padding boven en onder */
+    margin-bottom: 50px;
+    /* Ruimte onder de navbar */
+    position: relative;
+    /* Relative positionering voor positioneringseffecten */
+    top: 20px;
+    /* Verplaatst de navbar 20px naar beneden */
+}
+
+/* Stijlen voor navigatielinks */
+.nav-link {
+    color: var(--text-color);
+    /* Witte tekstkleur voor betere zichtbaarheid */
+    text-decoration: none;
+    /* Geen onderstreping om een schone look te behouden */
+    font-size: 1rem;
+    /* Standaardgrootte voor leesbaarheid */
+    font-weight: bold;
+    /* Vetgedrukt om de navigatielinks op te laten vallen */
+    margin: 0 30px;
+    /* Zorgt voor voldoende ruimte tussen de links */
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Vloeiende overgang voor kleur en vergroting */
+}
+
+/* Hover- en focus-effecten voor navigatielinks */
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--hover-color);
+    /* Verandert de kleur naar een rood-oranje tint */
+    transform: scale(1.1);
+    /* Vergroot de link lichtjes voor visuele feedback */
+}
+
+/* Stijlen voor dropdown-knop */
+.dropbtn {
+    background-color: var(--subcat1-navbar-bg-color);
+    /* Oranje achtergrondkleur */
+    color: var(--text-color);
+    /* Witte tekstkleur */
+    padding: 16px;
+    /* Comfortabele padding */
+    font-size: 16px;
+    /* Duidelijk leesbare tekstgrootte */
+    border: none;
+    /* Geen rand om de knop */
+    cursor: pointer;
+    /* Verandert de cursor om aan te geven dat het klikbaar is */
+    transition: background-color 0.3s ease;
+    /* Vloeiende achtergrondkleurverandering bij hover */
+    outline: none;
+    /* Geen focus-omlijning voor een schone uitstraling */
+    font-weight: bold;
+    /* Vetgedrukte tekst voor betere zichtbaarheid */
+    margin-top: 4px;
+    /* Kleine marge aan de bovenkant voor visuele scheiding */
+}
+
+/* Hover- en focus-effecten voor dropdown-knop */
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: var(--nav-hover);
+    /* Donker oranje kleur bij hover/focus */
+}
+
+/* Container voor dropdown-inhoud */
+.dropdown {
+    position: relative;
+    /* Noodzakelijk voor correcte positionering van de dropdown-inhoud */
+    display: inline-block;
+    /* Zorgt ervoor dat de container zich gedraagt als inline element */
+}
+
+/* Verborgen dropdown-inhoud */
+.dropdown-content {
+    display: none;
+    /* Verborgen tot hover */
+    position: absolute;
+    /* Absolute positionering ten opzichte van de dropdown container */
+    background-color: #f9f9f9;
+    /* Lichtgrijze achtergrondkleur voor contrast */
+    min-width: 200px;
+    /* Minimale breedte voor inhoud */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    /* Schaduweffect voor diepte */
+    z-index: 1;
+    /* Zorgt dat de dropdown boven andere elementen verschijnt */
+    border-radius: 4px;
+    /* Afgeronde hoeken voor moderne uitstraling */
+    overflow: hidden;
+    /* Verbergt overflow van inhoud */
+    top: 100%;
+    /* Positieert de dropdown direct onder de knop */
+}
+
+/* Stijlen voor links binnen de dropdown */
+.dropdown-content a {
+    color: black;
+    /* Zwarte tekstkleur voor contrast */
+    padding: 12px 16px;
+    /* Padding voor comfortabele klikgebieden */
+    text-decoration: none;
+    /* Geen onderstreping voor een schone uitstraling */
+    display: block;
+    /* Zorgt dat de links de volledige breedte van de container innemen */
+    transition: background-color 0.3s ease;
+    /* Vloeiende overgang voor achtergrondkleur */
+}
+
+/* Hover-effect voor links binnen de dropdown */
+.dropdown-content a:hover {
+    background-color: var(--item-hover-shadow-color);
+    /* Lichter schaduweffect bij hover */
+}
+
+/* Toont de dropdown-inhoud bij hover over de dropdown-container */
+.dropdown:hover .dropdown-content {
+    display: block;
+    /* Maakt de inhoud zichtbaar */
+}
+
+/* Stijl voor de huidige actieve link binnen de dropdown */
+.dropdown-content a.current {
+    background-color: var(--nav-hover);
+    /* Donker oranje achtergrond voor de actieve link */
+    color: white;
+    /* Witte tekstkleur voor contrast */
+}
+
+/* Achtergrondafbeeldingen aan de zijkanten van de pagina */
+.side-image {
+    background-size: cover;
+    /* Zorgt dat de afbeelding de volledige beschikbare ruimte bedekt */
+    background-position: center;
+    /* Centreert de afbeelding */
+    position: fixed;
+    /* Blijft vast op de plaats tijdens scrollen */
+    top: var(--header-height);
+    /* Begint net onder de header */
+    bottom: 0;
+    /* Strekt uit tot de onderkant van het scherm */
+    width: var(--side-image-width);
+    /* Vaste breedte zoals gedefinieerd in de variabelen */
+    z-index: -1;
+    /* Zorgt dat de afbeelding achter de content ligt */
+}
+
+/* Specifieke stijlen voor de linker zijafbeelding */
+.left-side-image {
+    left: 0;
+    /* Uitgelijnd aan de linkerkant */
+    background-image: url('/Arian/img/js.jpg');
+    /* Achtergrondafbeelding */
+}
+
+/* Specifieke stijlen voor de rechter zijafbeelding */
+.right-side-image {
+    right: 0;
+    /* Uitgelijnd aan de rechterkant */
+    background-image: url('/Arian/img/47dc1789ecd67ebdb96829da889a0ae3.jpg');
+    /* Achtergrondafbeelding */
+}
+
+/* Grid layout voor schoenen */
+.shoeGrid {
+    display: grid;
+    /* Gebruikt CSS Grid voor de layout */
+    grid-template-columns: repeat(3, 1fr);
+    /* Creëert drie kolommen met gelijke breedte */
+    gap: var(--grid-gap);
+    /* Ruimte tussen de items */
+    padding: 20px;
+    /* Padding rondom het grid */
+    justify-content: center;
+    /* Centreert het grid */
+    margin-top: calc(var(--header-height) + 30px);
+    /* Bovenmarge om ruimte te geven onder de header */
+    margin-left: var(--side-image-width);
+    /* Linkermarge gelijk aan de breedte van de zijafbeelding */
+    margin-right: var(--side-image-width);
+    /* Rechtermarge gelijk aan de breedte van de zijafbeelding */
+    max-width: calc(100% - 2 * var(--side-image-width));
+    /* Maximale breedte, aftrek van zijafbeeldingen */
+    position: relative;
+    /* Zorgt voor positioneringscontext */
+    z-index: 1;
+    /* Boven andere elementen */
+}
+
+/* Stijlen voor elk schoenenitem */
+.shoeItem {
+    background-color: var(--item-bg-color);
+    /* Achtergrondkleur van het item */
+    box-shadow: 0 4px 8px var(--item-shadow-color);
+    /* Schaduweffect voor diepte */
+    text-align: center;
+    /* Centreert de tekst */
+    border-radius: 8px;
+    /* Afgeronde hoeken */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Vloeiende overgangen voor hover-effecten */
+    padding: 20px;
+    /* Padding rondom de content */
+}
+
+/* Hover-effect voor schoenenitems */
+.shoeItem:hover {
+    transform: translateY(var(--item-hover-move));
+    /* Beweegt omhoog bij hover */
+    box-shadow: 0 6px 12px var(--item-hover-shadow-color);
+    /* Donkerder schaduw voor meer diepte */
+}
+
+/* Stijlen voor schoennamen en prijzen */
+.shoeName,
+.shoePrice {
+    margin: 10px 0;
+    /* Marge boven en onder */
+    font-weight: bold;
+    /* Vetgedrukt voor nadruk */
+    font-size: var(--font-size-large);
+    /* Grote lettergrootte voor de naam */
+    color: var(--price-color);
+    /* Kleur specifiek voor prijzen */
+}
+
+/* Aanvullende stijlen specifiek voor schoenprijzen */
+.shoePrice {
+    font-size: var(--font-size-medium);
+    /* Middelgrote lettergrootte voor onderscheid */
+    color: var(--price-color);
+    /* Consistente kleur voor prijsinformatie */
+}
+
+
+/* Mediaquery voor schermen met een maximale breedte van 768 pixels */
+@media (max-width: 768px) {
+    header {
+        /* Aanpassen van de padding van de header om ruimte te maken voor twee rijen links */
+        padding-top: 42px;
+        padding-bottom: 10px;
+    }
+
+    .navbar {
+        /* Overschrijf flex-direction voor responsiviteit */
+        flex-direction: column;
+        align-items: center;
+        /* Uitlijning van links naar het midden */
+    }
+
+    .dropbtn {
+        background-color: transparent;
+        margin-bottom: 30px;
+    }
+
+    .navbar>.nav-link,
+    .navbar>.dropdown {
+        /* Richten op directe kinderlinks en dropdown binnen de navigatiebalk */
+        margin: 4px 0;
+        /* Ruimte boven en onder */
+        font-size: var(--font-size-small);
+        /* Lettergrootte aanpassen */
+    }
+
+    /* Extra container om de bovenste rij links vast te houden */
+    .nav-top-row {
+        display: flex;
+        justify-content: center;
+        /* Links centreren */
+        flex-wrap: wrap;
+        /* Toestaan dat de container wordt gewrapt */
+    }
+
+    /* Extra container om de onderste rij links vast te houden */
+    .nav-bottom-row {
+        display: flex;
+        justify-content: center;
+        /* Links centreren */
+        margin-top: 10px;
+        /* Ruimte tussen de twee rijen */
+    }
+
+    .nav-link:hover,
+    .nav-link:focus {
+        color: white;
+        transform: none;
+        /* Schaling verwijderen om lay-out te behouden */
+    }
+
+    /* Stijlen voor de grid waarin schoenen worden weergegeven */
+    .shoeGrid {
+        grid-template-columns: repeat(3, 1fr);
+        /* Grid met 3 kolommen van gelijke breedte */
+        justify-items: center;
+        /* Schoenen centreren binnen de grid */
+        margin: 0 auto;
+        /* Marge boven en onder op automatisch zetten om in het midden van de pagina uit te lijnen */
+        gap: 20px;
+        /* Ruimte tussen de grid-items */
+        padding: var(--grid-gap);
+        /* Binnenste vulling instellen met behulp van een CSS-variabele */
+        max-width: 90%;
+        /* Maximale breedte van de grid instellen op 90% van de beschikbare ruimte */
+    }
+
+
+    .side-image {
+        /* Zijafbeeldingen verbergen in responsieve weergave */
+        display: none;
+    }
+}
