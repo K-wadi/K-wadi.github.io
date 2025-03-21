@@ -1,0 +1,75 @@
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.review-card {
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+}
+
+.rating {
+    color: #ddd;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.rating .star {
+    display: inline-block;
+    transition: color 0.2s ease;
+}
+
+.rating .star.active,
+.rating .star:hover,
+.rating .star:hover ~ .star {
+    color: #ffd700;
+}
+
+.review-rating {
+    color: #ffd700;
+    font-size: 18px;
+}
+
+.review-meta {
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+.review-content {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.category-badge {
+    background-color: #e9ecef;
+    color: #495057;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+}
+
+#review-form .rating {
+    margin-bottom: 1rem;
+}
+
+.filters {
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 200px;
+    }
+    
+    .filters .form-select {
+        margin-bottom: 1rem;
+    }
+} 

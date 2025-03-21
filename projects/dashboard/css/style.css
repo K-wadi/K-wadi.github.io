@@ -1,0 +1,90 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card {
+    background: linear-gradient(135deg, #4e73df 0%, #224abe 100%);
+    color: white;
+}
+
+.stat-card .card-title {
+    color: rgba(255,255,255,0.8);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stat-card .card-text {
+    margin: 0.5rem 0;
+    font-weight: 600;
+}
+
+.stat-card p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.table th {
+    border-top: none;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #666;
+}
+
+.status-badge {
+    padding: 0.25rem 0.5rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.status-completed {
+    background-color: #1cc88a;
+    color: white;
+}
+
+.status-pending {
+    background-color: #f6c23e;
+    color: white;
+}
+
+.status-cancelled {
+    background-color: #e74a3b;
+    color: white;
+}
+
+#sales-chart, #category-chart {
+    min-height: 300px;
+}
+
+.apexcharts-tooltip {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 768px) {
+    .stat-card {
+        margin-bottom: 1rem;
+    }
+    
+    .table-responsive {
+        margin-bottom: 1rem;
+    }
+} 

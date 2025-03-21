@@ -200,3 +200,96 @@ img {
     border-radius: 100px;
     font-size: 24px;
 }
+
+/* Project Cards */
+.project-badges {
+    margin-bottom: 1rem;
+}
+
+.project-badges .badge {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0.8rem;
+    font-weight: 500;
+}
+
+.achievement-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.achievement-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.achievement-list li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--color-brand);
+}
+
+.project-links .btn {
+    transition: all 0.4s ease;
+}
+
+.project-links .btn:hover {
+    transform: translateY(-2px);
+}
+
+.project-meta {
+    color: var(--color-brand);
+    font-size: 0.9rem;
+}
+
+/* Skills Section */
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.tool-item {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    transition: all 0.4s ease;
+}
+
+.tool-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.tool-item i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-brand);
+}
+
+.tool-item span {
+    display: block;
+    font-size: 0.9rem;
+}
+
+.progress {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.progress-bar {
+    background-color: var(--color-brand);
+    transition: width 1s ease;
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"] .tool-item {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .tool-item:hover {
+    background: rgba(0, 0, 0, 0.3);
+}

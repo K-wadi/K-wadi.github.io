@@ -3,7 +3,17 @@
 		{
 			"name": "K-wadi.github.io",
 			"path": "."
+		},
+		{
+			"name": "sd23-p01-reviewyourexperience-k-a-main",
+			"path": "../../../Users/Gebruiker/Downloads/sd23-p01-reviewyourexperience-k-a-main"
+		},
+		{
+			"name": "a-k-pizzas_test-main",
+			"path": "../../../Users/Gebruiker/Downloads/a-k-pizzas_test-main"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "K-wadi.github.io"
+	}
 }

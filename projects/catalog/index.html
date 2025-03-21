@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Catalog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-shop"></i> Shoe Catalog
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" data-category="all">All</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-category="running">Running</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-category="basketball">Basketball</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-category="casual">Casual</a>
+                    </li>
+                </ul>
+                <div class="nav-buttons">
+                    <button class="btn nav-btn" id="theme-toggle" title="Toggle Dark Mode">
+                        <i class="bi bi-moon-stars"></i>
+                    </button>
+                    <button class="btn nav-btn" data-bs-toggle="modal" data-bs-target="#wishlistModal" title="Wishlist">
+                        <i class="bi bi-heart"></i>
+                        <span class="badge rounded-pill" id="wishlist-count">0</span>
+                    </button>
+                    <button class="btn nav-btn" data-bs-toggle="modal" data-bs-target="#cartModal" title="Shopping Cart">
+                        <i class="bi bi-cart3"></i>
+                        <span class="badge rounded-pill" id="cart-count">0</span>
+                    </button>
+                    <button class="btn nav-btn" data-bs-toggle="modal" data-bs-target="#achievementsModal" title="Achievements">
+                        <i class="bi bi-trophy"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1 class="display-4">Find Your Perfect Fit</h1>
+                    <p class="lead">Discover our collection of premium footwear</p>
+                    <div class="search-box">
+                        <input type="search" class="form-control" id="search-input" placeholder="Search shoes...">
+                        <button class="btn btn-primary" id="search-btn">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="featured-products">
+                        <!-- Featured products will be added here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <!-- Filters -->
+        <div class="filters mb-4">
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <div class="filter-group">
+                        <label class="filter-label">Brand</label>
+                        <select class="form-select" id="brand-filter">
+                            <option value="">All Brands</option>
+                            <option value="nike">Nike</option>
+                            <option value="adidas">Adidas</option>
+                            <option value="puma">Puma</option>
+                            <option value="new-balance">New Balance</option>
+                            <option value="under-armour">Under Armour</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="filter-group">
+                        <label class="filter-label">Price Range</label>
+                        <select class="form-select" id="price-filter">
+                            <option value="">All Prices</option>
+                            <option value="0-50">Under $50</option>
+                            <option value="50-100">$50 - $100</option>
+                            <option value="100-200">$100 - $200</option>
+                            <option value="200+">Over $200</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="filter-group">
+                        <label class="filter-label">Sort By</label>
+                        <select class="form-select" id="sort-filter">
+                            <option value="name">Name</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="rating">Rating</option>
+                            <option value="popularity">Popularity</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="filter-group">
+                        <label class="filter-label">&nbsp;</label>
+                        <button class="btn btn-outline-secondary w-100" id="clear-filters">
+                            <i class="bi bi-x-circle"></i> Clear Filters
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Active Filters -->
+        <div class="active-filters mb-4" id="active-filters">
+            <!-- Active filter tags will be added here -->
+        </div>
+
+        <!-- Products Stats -->
+        <div class="products-stats mb-4">
+            <div class="row align-items-center">
+                <div class="col">
+                    <span id="products-count">0 Products</span>
+                </div>
+                <div class="col-auto">
+                    <div class="btn-group">
+                        <button class="btn btn-outline-secondary" id="grid-view">
+                            <i class="bi bi-grid"></i>
+                        </button>
+                        <button class="btn btn-outline-secondary" id="list-view">
+                            <i class="bi bi-list"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="row g-4" id="products-grid">
+            <!-- Products will be dynamically added here -->
+        </div>
+
+        <!-- Load More -->
+        <div class="text-center mt-4 mb-4">
+            <button class="btn btn-outline-primary" id="load-more">
+                Load More <i class="bi bi-arrow-down"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Product Modal -->
+    <div class="modal fade" id="productModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="product-gallery">
+                                <img id="modal-image" src="" alt="" class="img-fluid rounded mb-3">
+                                <div class="thumbnail-gallery" id="thumbnail-gallery">
+                                    <!-- Thumbnail images will be added here -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="product-details">
+                                <div class="brand-badge mb-2" id="modal-brand"></div>
+                                <div class="rating mb-2">
+                                    <div class="stars" id="modal-rating"></div>
+                                    <span class="rating-count" id="modal-rating-count"></span>
+                                </div>
+                                <p class="description" id="modal-description"></p>
+                                <div class="price mb-3">
+                                    <span class="current-price" id="modal-price"></span>
+                                    <span class="original-price" id="modal-original-price"></span>
+                                    <span class="discount-badge" id="modal-discount"></span>
+                                </div>
+                                <div class="size-selection mb-3">
+                                    <h5>Select Size:</h5>
+                                    <div class="size-buttons" id="size-buttons">
+                                        <!-- Size buttons will be added here -->
+                                    </div>
+                                </div>
+                                <div class="quantity-selector mb-3">
+                                    <h5>Quantity:</h5>
+                                    <div class="input-group">
+                                        <button class="btn btn-outline-secondary" id="decrease-quantity">-</button>
+                                        <input type="number" class="form-control text-center" id="quantity" value="1" min="1" max="10">
+                                        <button class="btn btn-outline-secondary" id="increase-quantity">+</button>
+                                    </div>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn-primary w-100 mb-2" id="add-to-cart">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                    <button class="btn btn-outline-danger w-100" id="add-to-wishlist">
+                                        <i class="bi bi-heart"></i> Add to Wishlist
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Reviews -->
+                    <div class="reviews mt-4">
+                        <h5>Customer Reviews</h5>
+                        <div class="reviews-list" id="reviews-list">
+                            <!-- Reviews will be added here -->
+                        </div>
+                        <button class="btn btn-outline-primary mt-3" id="write-review">
+                            Write a Review
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shopping Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Shopping Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="cart-items" id="cart-items">
+                        <!-- Cart items will be added here -->
+                    </div>
+                    <div class="cart-summary">
+                        <div class="summary-row">
+                            <span>Subtotal:</span>
+                            <span id="cart-subtotal">$0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping:</span>
+                            <span id="cart-shipping">$0.00</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total:</span>
+                            <span id="cart-total">$0.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue Shopping</button>
+                    <button type="button" class="btn btn-primary" id="checkout">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wishlist Modal -->
+    <div class="modal fade" id="wishlistModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Wishlist</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="wishlist-items" id="wishlist-items">
+                        <!-- Wishlist items will be added here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Achievements Modal -->
+    <div class="modal fade" id="achievementsModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Achievements</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="achievements-stats mb-4">
+                        <div class="row text-center">
+                            <div class="col-4">
+                                <div class="stat-item">
+                                    <span class="stat-label">Total Spent</span>
+                                    <span class="stat-value" id="total-spent">$0</span>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-item">
+                                    <span class="stat-label">Items Bought</span>
+                                    <span class="stat-value" id="items-bought">0</span>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-item">
+                                    <span class="stat-label">Reviews</span>
+                                    <span class="stat-value" id="reviews-count">0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="achievement-list">
+                        <div class="achievement" data-id="firstPurchase">
+                            <i class="bi bi-trophy-fill"></i>
+                            <div>
+                                <span>First Purchase</span>
+                                <small>Make your first purchase</small>
+                            </div>
+                        </div>
+                        <div class="achievement" data-id="bigSpender">
+                            <i class="bi bi-trophy-fill"></i>
+                            <div>
+                                <span>Big Spender</span>
+                                <small>Spend over $500 in total</small>
+                            </div>
+                        </div>
+                        <div class="achievement" data-id="collector">
+                            <i class="bi bi-trophy-fill"></i>
+                            <div>
+                                <span>Shoe Collector</span>
+                                <small>Buy 5 different pairs of shoes</small>
+                            </div>
+                        </div>
+                        <div class="achievement" data-id="reviewer">
+                            <i class="bi bi-trophy-fill"></i>
+                            <div>
+                                <span>Top Reviewer</span>
+                                <small>Write 3 product reviews</small>
+                            </div>
+                        </div>
+                        <div class="achievement" data-id="wishlistPro">
+                            <i class="bi bi-trophy-fill"></i>
+                            <div>
+                                <span>Wishlist Pro</span>
+                                <small>Add 10 items to your wishlist</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <!-- Cart Toast -->
+        <div id="cart-toast" class="toast" role="alert">
+            <div class="toast-header">
+                <i class="bi bi-cart-check text-success me-2"></i>
+                <strong class="me-auto">Cart Updated</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+                Item added to cart successfully!
+            </div>
+        </div>
+        
+        <!-- Wishlist Toast -->
+        <div id="wishlist-toast" class="toast" role="alert">
+            <div class="toast-header">
+                <i class="bi bi-heart-fill text-danger me-2"></i>
+                <strong class="me-auto">Wishlist Updated</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+                Item added to wishlist!
+            </div>
+        </div>
+
+        <!-- Achievement Toast -->
+        <div id="achievement-toast" class="toast" role="alert">
+            <div class="toast-header">
+                <i class="bi bi-trophy-fill text-warning me-2"></i>
+                <strong class="me-auto">Achievement Unlocked!</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+                <!-- Achievement details will be added here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/catalog-data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html> 

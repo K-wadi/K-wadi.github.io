@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-container">
+            <h1 class="text-center mb-4">Tic Tac Toe</h1>
+            
+            <!-- Game Settings -->
+            <div class="game-settings mb-4">
+                <!-- Game Mode Selection -->
+                <div class="game-mode mb-3">
+                    <h5 class="settings-title">Game Mode</h5>
+                    <div class="btn-group w-100" role="group">
+                        <input type="radio" class="btn-check" name="game-mode" id="single-player" value="single" checked>
+                        <label class="btn btn-outline-primary" for="single-player">
+                            <i class="bi bi-person"></i> Single Player
+                        </label>
+                        
+                        <input type="radio" class="btn-check" name="game-mode" id="multi-player" value="multi">
+                        <label class="btn btn-outline-primary" for="multi-player">
+                            <i class="bi bi-people"></i> Two Players
+                        </label>
+                    </div>
+                </div>
+
+                <!-- AI Difficulty (for single player) -->
+                <div class="ai-difficulty mb-3" id="ai-settings">
+                    <h5 class="settings-title">AI Difficulty</h5>
+                    <div class="btn-group w-100" role="group">
+                        <input type="radio" class="btn-check" name="difficulty" id="easy" value="easy" checked>
+                        <label class="btn btn-outline-success" for="easy">
+                            <i class="bi bi-shield"></i> Easy
+                        </label>
+                        
+                        <input type="radio" class="btn-check" name="difficulty" id="medium" value="medium">
+                        <label class="btn btn-outline-warning" for="medium">
+                            <i class="bi bi-shield-fill"></i> Medium
+                        </label>
+                        
+                        <input type="radio" class="btn-check" name="difficulty" id="hard" value="hard">
+                        <label class="btn btn-outline-danger" for="hard">
+                            <i class="bi bi-shield-fill-check"></i> Hard
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Player Symbols -->
+                <div class="player-symbols mb-3">
+                    <h5 class="settings-title">Player Symbols</h5>
+                    <div class="row g-2">
+                        <div class="col-6">
+                            <div class="symbol-select">
+                                <label>Player 1</label>
+                                <select class="form-select" id="player1-symbol">
+                                    <option value="X">X</option>
+                                    <option value="O">O</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="symbol-select">
+                                <label>Player 2 / AI</label>
+                                <select class="form-select" id="player2-symbol" disabled>
+                                    <option value="O">O</option>
+                                    <option value="X">X</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Stats -->
+            <div class="game-stats mb-4">
+                <div class="row text-center">
+                    <div class="col-4">
+                        <div class="stat-item">
+                            <span class="stat-label">Games Played</span>
+                            <span class="stat-value" id="games-played">0</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="stat-item">
+                            <span class="stat-label">Win Streak</span>
+                            <span class="stat-value" id="win-streak">0</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="stat-item">
+                            <span class="stat-label">Best Streak</span>
+                            <span class="stat-value" id="best-streak">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Board -->
+            <div class="game-board mb-4">
+                <div class="board-grid">
+                    <div class="cell" data-cell-index="0"></div>
+                    <div class="cell" data-cell-index="1"></div>
+                    <div class="cell" data-cell-index="2"></div>
+                    <div class="cell" data-cell-index="3"></div>
+                    <div class="cell" data-cell-index="4"></div>
+                    <div class="cell" data-cell-index="5"></div>
+                    <div class="cell" data-cell-index="6"></div>
+                    <div class="cell" data-cell-index="7"></div>
+                    <div class="cell" data-cell-index="8"></div>
+                    <div class="winning-line" id="winning-line"></div>
+                </div>
+            </div>
+
+            <!-- Game Status -->
+            <div class="game-status mb-4">
+                <div class="status-message text-center mb-3">
+                    <span id="status-text">Player X's turn</span>
+                </div>
+                <div class="score-board">
+                    <div class="row text-center">
+                        <div class="col-6">
+                            <div class="player-score active" id="player1-score">
+                                <div class="score-icon">X</div>
+                                <div class="score-details">
+                                    <span class="player-name">Player 1</span>
+                                    <span class="score">0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="player-score" id="player2-score">
+                                <div class="score-icon">O</div>
+                                <div class="score-details">
+                                    <span class="player-name">Player 2</span>
+                                    <span class="score">0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Controls -->
+            <div class="game-controls text-center">
+                <button class="btn btn-primary me-2" id="restart-game">
+                    <i class="bi bi-arrow-repeat"></i> Restart Game
+                </button>
+                <button class="btn btn-secondary me-2" id="reset-scores">
+                    <i class="bi bi-trash"></i> Reset Scores
+                </button>
+                <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#achievementsModal">
+                    <i class="bi bi-trophy"></i> Achievements
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Over Modal -->
+    <div class="modal fade" id="gameOverModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Game Over</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="winner-animation mb-4">
+                        <i class="bi bi-trophy-fill trophy-icon"></i>
+                    </div>
+                    <p id="winner-message" class="mb-3"></p>
+                    <div class="game-stats-summary">
+                        <div class="stat-row">
+                            <span class="stat-label">Games Played:</span>
+                            <span class="stat-value" id="modal-games-played">0</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">Current Streak:</span>
+                            <span class="stat-value" id="modal-current-streak">0</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">Best Streak:</span>
+                            <span class="stat-value" id="modal-best-streak">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="play-again">Play Again</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Achievements Modal -->
+    <div class="modal fade" id="achievementsModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Achievements</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="achievement-list">
+                        <div class="achievement" data-id="firstWin">
+                            <i class="bi bi-trophy-fill"></i>
+                            <span>First Victory</span>
+                            <small>Win your first game</small>
+                        </div>
+                        <div class="achievement" data-id="threeStreak">
+                            <i class="bi bi-trophy-fill"></i>
+                            <span>Hat Trick</span>
+                            <small>Win 3 games in a row</small>
+                        </div>
+                        <div class="achievement" data-id="beatHardAI">
+                            <i class="bi bi-trophy-fill"></i>
+                            <span>AI Master</span>
+                            <small>Win against Hard AI</small>
+                        </div>
+                        <div class="achievement" data-id="perfectGame">
+                            <i class="bi bi-trophy-fill"></i>
+                            <span>Perfect Game</span>
+                            <small>Win in 5 moves or less</small>
+                        </div>
+                        <div class="achievement" data-id="tenGames">
+                            <i class="bi bi-trophy-fill"></i>
+                            <span>Dedicated Player</span>
+                            <small>Play 10 games</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html> 
