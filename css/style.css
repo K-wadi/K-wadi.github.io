@@ -337,3 +337,20 @@ img {
 [data-theme="dark"] .tool-item:hover {
     background: rgba(0, 0, 0, 0.3);
 }
+
+/* Custom cursor */
+html {
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 26 26'%3E%3Cpath d='M4 2 L4 21 L9.5 16.5 L13 23 L16.5 21.3 L13 14.8 L20 14.8 Z' fill='%23e0f780' stroke='%23033f47' stroke-width='1.6' stroke-linejoin='round'/%3E%3C/svg%3E") 4 2, auto;
+}
+
+a,
+button,
+.btn,
+input[type="submit"],
+input[type="button"],
+.navbar-toggler,
+[role="button"],
+select,
+label[for] {
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28'%3E%3Ccircle cx='14' cy='14' r='9' fill='none' stroke='%23e0f780' stroke-width='2'/%3E%3Ccircle cx='14' cy='14' r='3' fill='%23deff58'/%3E%3C/svg%3E") 14 14, pointer;
+}
