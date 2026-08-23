@@ -123,7 +123,7 @@ img {
     .navbar {
         min-height: 100vh;
         width: var(--sidbar-width);
-        background: linear-gradient(rgba(3, 63, 71, 0.8), rgba(3, 63, 71, 0.8)), url(/img/sidebar-img.jpg);
+        background: linear-gradient(rgba(3, 63, 71, 0.8), rgba(3, 63, 71, 0.8));
         background-size: cover;
         background-position: center;
     }
@@ -200,9 +200,9 @@ img {
 }
 
 .card-custom-logo img {
-    width: auto;
-    max-width: 120px;
-    max-height: 120px;
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
 }
 
 .card-custom:hover .card-custom-logo img {
