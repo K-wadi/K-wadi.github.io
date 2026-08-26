@@ -22,3 +22,11 @@ error: no LLM API key found (6 doc/paper/image file(s) need semantic extraction)
 Obsidian vault: 412 notes in /Users/khaled/Documents/GitHub/Khaled-OS/03 Projects/portfolio/
 Canvas: /Users/khaled/Documents/GitHub/Khaled-OS/03 Projects/portfolio/graph.canvas
 Open /Users/khaled/Documents/GitHub/Khaled-OS/03 Projects/portfolio/ as a vault in Obsidian.
+=== Wed Aug 26 07:06:13 +03 2026 ===
+error: no LLM API key found (6 doc/paper/image file(s) need semantic extraction). Set GEMINI_API_KEY or GOOGLE_API_KEY (gemini), MOONSHOT_API_KEY (kimi), ANTHROPIC_API_KEY (claude), OPENAI_API_KEY (openai), DEEPSEEK_API_KEY (deepseek), or pass --backend. A code-only corpus needs no key. Or pass --code-only to index just the code (local AST, no key) and skip the non-code files.
+[graphify extract] incremental scan of /Users/khaled/Documents/GitHub/K-wadi.github.io
+[graphify extract] 0 code, 0 docs, 0 papers, 6 images changed; 17 unchanged; 0 deleted
+[graphify extract] 19 file(s) not classified (no supported extension or shebang), skipped: K-wadi.github.io.code-workspace, aos.css, bootstrap.min.css, favicon.ico, la-brands-400.eot, la-brands-400.ttf (+13 more)
+Obsidian vault: 412 notes in /Users/khaled/Documents/GitHub/Khaled-OS/03 Projects/portfolio/
+Canvas: /Users/khaled/Documents/GitHub/Khaled-OS/03 Projects/portfolio/graph.canvas
+Open /Users/khaled/Documents/GitHub/Khaled-OS/03 Projects/portfolio/ as a vault in Obsidian.
