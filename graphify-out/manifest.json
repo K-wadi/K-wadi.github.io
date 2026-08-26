@@ -1,0 +1,104 @@
+{
+  "js/aos.js": {
+    "mtime": 1787448758.7420301,
+    "seen": 1787716617.479037,
+    "ast_hash": "5619839e627a30d0fff99580dae9f2ba",
+    "semantic_hash": "5619839e627a30d0fff99580dae9f2ba"
+  },
+  "js/bootstrap.bundle.min.js": {
+    "mtime": 1787448758.74523,
+    "seen": 1787716617.479041,
+    "ast_hash": "0e46d0342aa267c34c7bedbb827650b9",
+    "semantic_hash": "0e46d0342aa267c34c7bedbb827650b9"
+  },
+  "js/main.js": {
+    "mtime": 1787448758.738964,
+    "seen": 1787716617.479043,
+    "ast_hash": "d3c00305c463369784d5c9b56965ea6d",
+    "semantic_hash": "d3c00305c463369784d5c9b56965ea6d"
+  },
+  "index.html": {
+    "mtime": 1787448672.9420106,
+    "seen": 1787716617.4790442,
+    "ast_hash": "9f42cbb9be0ab7e99371d225992a3ac6",
+    "semantic_hash": "9f42cbb9be0ab7e99371d225992a3ac6"
+  },
+  "cv/Khaled_Wadi_CV.pdf": {
+    "mtime": 1787445032.197191,
+    "seen": 1787716617.4790452,
+    "ast_hash": "68bf651c289155cfce079b3a5a877018",
+    "semantic_hash": "68bf651c289155cfce079b3a5a877018"
+  },
+  "img/B_logo_bg.webp": {
+    "mtime": 1787446085.269472,
+    "seen": 1787716617.4790459,
+    "ast_hash": "edd17b0042ec1ff4a504ee800ed382b8",
+    "semantic_hash": "edd17b0042ec1ff4a504ee800ed382b8"
+  },
+  "img/Cenya.webp": {
+    "mtime": 1787446085.2733026,
+    "seen": 1787716617.4790468,
+    "ast_hash": "c1b4552151e9ed473f3527340fdb0d03",
+    "semantic_hash": "c1b4552151e9ed473f3527340fdb0d03"
+  },
+  "img/Khaled-sm.webp": {
+    "mtime": 1787448663.800613,
+    "seen": 1787716617.4790468,
+    "ast_hash": "3abe5e9ef00b3845c5dae2bc3dcd2ddf",
+    "semantic_hash": "3abe5e9ef00b3845c5dae2bc3dcd2ddf"
+  },
+  "img/Khaled.webp": {
+    "mtime": 1787446085.2021854,
+    "seen": 1787716617.479048,
+    "ast_hash": "b8ef539c1bf3e35d8fcc916db6b76f64",
+    "semantic_hash": "b8ef539c1bf3e35d8fcc916db6b76f64"
+  },
+  "img/Logo_naqsha.webp": {
+    "mtime": 1787446085.2239435,
+    "seen": 1787716617.479049,
+    "ast_hash": "bad0c0ca6c0c48c8a26b2c3c81b36378",
+    "semantic_hash": "bad0c0ca6c0c48c8a26b2c3c81b36378"
+  },
+  "img/Luchtleven.webp": {
+    "mtime": 1787446085.261585,
+    "seen": 1787716617.47905,
+    "ast_hash": "060152485e7ec9982e4b237e0b15cfb7",
+    "semantic_hash": "060152485e7ec9982e4b237e0b15cfb7"
+  },
+  "img/Magic_Mix.webp": {
+    "mtime": 1787261979.1310563,
+    "seen": 1787716617.47905,
+    "ast_hash": "35a149153101248dae8d3eaa334df83c",
+    "semantic_hash": "35a149153101248dae8d3eaa334df83c"
+  },
+  "img/Tuliptale.webp": {
+    "mtime": 1787446085.2385025,
+    "seen": 1787716617.479051,
+    "ast_hash": "ca7f23b6268393d1c116b708f0dc78d0",
+    "semantic_hash": "ca7f23b6268393d1c116b708f0dc78d0"
+  },
+  "img/Yaqeen.webp": {
+    "mtime": 1787446085.2551715,
+    "seen": 1787716617.479052,
+    "ast_hash": "c9811357a48631ecf1c0a2aa1d0f2f6e",
+    "semantic_hash": "c9811357a48631ecf1c0a2aa1d0f2f6e"
+  },
+  "img/favicon/apple-touch-icon.png": {
+    "mtime": 1787268097.9975035,
+    "seen": 1787716617.479052,
+    "ast_hash": "3a13f8c214e198a9cef57333468c217b",
+    "semantic_hash": "3a13f8c214e198a9cef57333468c217b"
+  },
+  "img/favicon/favicon-32x32.png": {
+    "mtime": 1787268097.9493952,
+    "seen": 1787716617.479053,
+    "ast_hash": "7f1e2abbfe4ec14d10ba69625fcdd2f5",
+    "semantic_hash": "7f1e2abbfe4ec14d10ba69625fcdd2f5"
+  },
+  "img/wg-logo.webp": {
+    "mtime": 1787446085.2469337,
+    "seen": 1787716617.479054,
+    "ast_hash": "e8007ea20b07947e44255309234f706b",
+    "semantic_hash": "e8007ea20b07947e44255309234f706b"
+  }
+}
