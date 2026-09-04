@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Khaled's Protfolio</title>
-  <meta name="description" content="Khaled Wadi's portfolio - full-stack web developer showcasing projects, technical skills, and experience." />
+  <title>Khaled's Portfolio</title>
+  <meta name="description" content="Portfolio van Khaled Wadi - fullstack webontwikkelaar met projecten, technische vaardigheden en ervaring." data-i18n-content="meta.description" />
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png" />
@@ -28,29 +28,35 @@
         <img src="./img/Khaled-sm.webp" srcset="./img/Khaled-sm.webp 96w, ./img/Khaled.webp 360w" sizes="(min-width: 992px) 240px, 48px" class="navbar-avatar" alt="Khaled Wadi" width="48" height="48" />
         <span class="h3 fw-bold d-block d-lg-none ms-2">Khaled Wadi</span>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <div class="d-flex align-items-center gap-2 mb-lg-4">
+        <div class="lang-toggle" role="group" aria-label="Choose language / Kies taal">
+          <button type="button" class="lang-btn active" data-lang-btn="nl" aria-pressed="true">NL</button>
+          <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="false">EN</button>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" data-i18n-aria="nav.toggleAria" aria-label="Navigatiemenu wisselen">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
           <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#home" data-i18n="nav.home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#work">Work</a>
+            <a class="nav-link" href="#work" data-i18n="nav.work">Werk</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link" href="#skills" data-i18n="nav.skills">Vaardigheden</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#about" data-i18n="nav.about">Over mij</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#cv">CV</a>
+            <a class="nav-link" href="#cv" data-i18n="nav.cv">CV</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#contact" data-i18n="nav.contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -65,17 +71,17 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-10">
-            <h1 class="display-4 fw-bold" data-aos="fade-up">
-              I'M A <span class="text-brand">SOFTWARE DEVELOPER</span> FROM
-              NETHERLANDS
+            <h1 class="display-4 fw-bold" data-aos="fade-up" data-i18n-html="home.title">
+              IK BEN EEN <span class="text-brand">SOFTWARE ONTWIKKELAAR</span> UIT
+              NEDERLAND
             </h1>
-            <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">
-              I am a motivated Software Development student with a passion for programming and problem-solving. 
-              With a strong foundation in web development, databases, and software development, 
-              I seek to enhance my programming skills and contribute to innovative IT solutions.
+            <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300" data-i18n="home.lead">
+              Ik ben een gemotiveerde Software Development student met een passie voor programmeren en
+              probleemoplossing. Met een sterke basis in webontwikkeling, databases en softwareontwikkeling wil ik
+              mijn programmeervaardigheden verder ontwikkelen en bijdragen aan innovatieve IT-oplossingen.
             </p>
             <div data-aos="fade-up" data-aos-delay="600">
-              <a href="#work" class="btn btn-brand me-3">Explore my work</a>
+              <a href="#work" class="btn btn-brand me-3" data-i18n="home.cta">Bekijk mijn werk</a>
             </div>
           </div>
         </div>
@@ -88,8 +94,8 @@
       <div class="container">
         <div class="row pb-4" data-aos="fade-up">
           <div class="col-lg-8">
-            <p class="h6 text-brand">WORK</p>
-            <h2 class="h1">My recent projects</h2>
+            <p class="h6 text-brand" data-i18n="work.label">WERK</p>
+            <h2 class="h1" data-i18n="work.heading">Mijn recente projecten</h2>
           </div>
         </div>
 
@@ -101,13 +107,13 @@
               </div>
               <div class="card-custom-content p-4">
                 <h3 class="h4">Bariq Autocare</h3>
-                <p class="text-brand mb-2">Full-Stack Business Operations Platform</p>
-                <p>
-                  Bariq Autocare is a production full-stack platform I built for a car detailing business in the
-                  Amsterdam area. It replaces workflows spread across WhatsApp and spreadsheets with a
-                  customer-facing website and an internal dashboard for managing bookings, customers, services,
-                  availability, invoicing, and analytics. I developed the system end to end with real-time data
-                  synchronization, automated SEO monitoring, testing, and deployment.
+                <p class="text-brand mb-2" data-i18n="work.bariq.tagline">Fullstack platform voor bedrijfsvoering</p>
+                <p data-i18n="work.bariq.desc">
+                  Bariq Autocare is een productieplatform dat ik volledig heb gebouwd voor een autodetailingbedrijf
+                  in de regio Amsterdam. Het vervangt workflows verspreid over WhatsApp en spreadsheets door een
+                  klantgerichte website en een intern dashboard voor het beheren van boekingen, klanten, diensten,
+                  beschikbaarheid, facturatie en analyses. Ik ontwikkelde het systeem end-to-end met realtime
+                  datasynchronisatie, geautomatiseerde SEO-monitoring, tests en deployment.
                 </p>
                 <div class="project-badges">
                   <span class="badge bg-primary">React</span>
@@ -127,7 +133,7 @@
                 </div>
                 <div class="project-links mt-4">
                   <a href="https://bariqautocare.nl/" target="_blank" rel="noopener" class="btn btn-sm btn-brand me-2">
-                    <i class="las la-external-link-alt"></i> Live site
+                    <i class="las la-external-link-alt"></i> <span data-i18n="work.liveSite">Live website</span>
                   </a>
                 </div>
               </div>
@@ -141,13 +147,13 @@
               </div>
               <div class="card-custom-content p-4">
                 <h3 class="h4">WadiGrow</h3>
-                <p class="text-brand mb-2">Agency platform & social automation system</p>
-                <p>
-                  WadiGrow is a full-stack agency platform I built to combine lead generation, client operations,
-                  and social media automation in one system. Beyond the multilingual public website, the platform
-                  includes an authenticated client dashboard and an Instagram automation pipeline that generates,
-                  quality-checks, schedules, and publishes content through the Instagram Graph API, with
-                  rate-limited engagement and audit logging.
+                <p class="text-brand mb-2" data-i18n="work.wadigrow.tagline">Agencyplatform & social-mediaautomatisering</p>
+                <p data-i18n="work.wadigrow.desc">
+                  WadiGrow is een fullstack agencyplatform dat ik heb gebouwd om leadgeneratie, klantbeheer en
+                  social-mediaautomatisering in één systeem te combineren. Naast de meertalige publieke website
+                  bevat het platform een beveiligd klantdashboard en een Instagram-automatiseringspijplijn die
+                  content genereert, controleert, plant en publiceert via de Instagram Graph API, met
+                  rate-limited interactie en auditlogging.
                 </p>
                 <div class="project-badges">
                   <span class="badge bg-primary">React</span>
@@ -165,7 +171,7 @@
                 </div>
                 <div class="project-links mt-4">
                   <a href="https://wadigrow.com/" target="_blank" rel="noopener" class="btn btn-sm btn-brand me-2">
-                    <i class="las la-external-link-alt"></i> Live site
+                    <i class="las la-external-link-alt"></i> <span data-i18n="work.liveSite">Live website</span>
                   </a>
                 </div>
               </div>
@@ -179,13 +185,14 @@
               </div>
               <div class="card-custom-content p-4">
                 <h3 class="h4">Cenya</h3>
-                <p class="text-brand mb-2">Multi-Tenant Scheduling & Automation SaaS</p>
-                <p>
-                  Cenya is a multi-tenant SaaS platform I built for appointment-based businesses to automate
-                  scheduling through WhatsApp. It connects customer conversations with business calendars to handle
-                  bookings, rescheduling, cancellations, and reminders automatically. I developed the platform end
-                  to end, including client and admin dashboards, secure WhatsApp webhooks, calendar synchronization,
-                  tenant-isolated data access, and a serverless automation backend built with Supabase.
+                <p class="text-brand mb-2" data-i18n="work.cenya.tagline">Multi-tenant planning- & automatiserings-SaaS</p>
+                <p data-i18n="work.cenya.desc">
+                  Cenya is een multi-tenant SaaS-platform dat ik heb gebouwd voor afspraakgebaseerde bedrijven om
+                  planning via WhatsApp te automatiseren. Het koppelt klantgesprekken aan bedrijfsagenda's om
+                  boekingen, verzettingen, annuleringen en herinneringen automatisch af te handelen. Ik
+                  ontwikkelde het platform end-to-end, inclusief klant- en beheerdersdashboards, beveiligde
+                  WhatsApp-webhooks, agendasynchronisatie, tenant-geïsoleerde gegevenstoegang en een serverless
+                  automatiseringsbackend gebouwd met Supabase.
                 </p>
                 <div class="project-badges">
                   <span class="badge bg-primary">React</span>
@@ -203,7 +210,7 @@
                 </div>
                 <div class="project-links mt-4">
                   <a href="https://cenya.nl/" target="_blank" rel="noopener" class="btn btn-sm btn-brand me-2">
-                    <i class="las la-external-link-alt"></i> Live site
+                    <i class="las la-external-link-alt"></i> <span data-i18n="work.liveSite">Live website</span>
                   </a>
                 </div>
               </div>
@@ -217,13 +224,14 @@
               </div>
               <div class="card-custom-content p-4">
                 <h3 class="h4">Naqsha</h3>
-                <p class="text-brand mb-2">Bilingual commerce & booking platform</p>
-                <p>
-                  Naqsha is a bilingual commerce and booking platform I built for a Palestinian cultural fashion
-                  brand in the Netherlands. The platform combines an Arabic/English storefront with full RTL/LTR
-                  support, collection and rental management, appointment booking, customer reviews, and a private
-                  admin interface for managing the catalog. I designed the experience around the business's
-                  existing WhatsApp-based sales workflow rather than forcing a traditional e-commerce checkout.
+                <p class="text-brand mb-2" data-i18n="work.naqsha.tagline">Tweetalig commerce- & boekingsplatform</p>
+                <p data-i18n="work.naqsha.desc">
+                  Naqsha is een tweetalig commerce- en boekingsplatform dat ik heb gebouwd voor een Palestijns
+                  cultureel modemerk in Nederland. Het platform combineert een Arabisch/Engelse webshop met volledige
+                  RTL/LTR-ondersteuning, collectie- en verhuurbeheer, afsprakenboeking, klantreviews en een privé
+                  beheerdersinterface voor het catalogusbeheer. Ik ontwierp de ervaring rond de bestaande op
+                  WhatsApp gebaseerde verkoopworkflow van het bedrijf in plaats van een traditionele
+                  e-commerce-afrekenprocedure te forceren.
                 </p>
                 <div class="project-badges">
                   <span class="badge bg-primary">Next.js</span>
@@ -240,7 +248,7 @@
                 </div>
                 <div class="project-links mt-4">
                   <a href="https://naqsha.nl/" target="_blank" rel="noopener" class="btn btn-sm btn-brand me-2">
-                    <i class="las la-external-link-alt"></i> Live site
+                    <i class="las la-external-link-alt"></i> <span data-i18n="work.liveSite">Live website</span>
                   </a>
                 </div>
               </div>
@@ -254,14 +262,14 @@
               </div>
               <div class="card-custom-content p-4">
                 <h3 class="h4">Mix Magic</h3>
-                <p class="text-brand mb-2">Custom e-commerce & product configuration platform</p>
-                <p>
-                  Mix Magic is a full-stack e-commerce platform I built for a perfume business in The Hague,
-                  centered around an interactive configurator for custom fragrances. Customers compose scents by
-                  ingredient weight, while the platform translates those selections into validated formulas and
-                  authoritative server-side pricing before Stripe checkout. I also built the multilingual
-                  storefront, loyalty and gift-card systems, workshop bookings, customer accounts, and
-                  administration tools on Supabase and PostgreSQL.
+                <p class="text-brand mb-2" data-i18n="work.mixmagic.tagline">E-commerce & productconfiguratieplatform op maat</p>
+                <p data-i18n="work.mixmagic.desc">
+                  Mix Magic is een fullstack e-commerceplatform dat ik heb gebouwd voor een parfumbedrijf in Den
+                  Haag, gecentreerd rond een interactieve configurator voor persoonlijke geuren. Klanten stellen
+                  geuren samen op basis van ingrediëntgewicht, terwijl het platform deze keuzes vertaalt naar
+                  gevalideerde formules en gezaghebbende server-side prijzen vóór het Stripe-afrekenen. Ik bouwde
+                  ook de meertalige webshop, loyaliteits- en cadeaukaartsystemen, workshopboekingen, klantaccounts
+                  en beheertools op Supabase en PostgreSQL.
                 </p>
                 <div class="project-badges">
                   <span class="badge bg-primary">React</span>
@@ -280,7 +288,7 @@
                 </div>
                 <div class="project-links mt-4">
                   <a href="https://mix-magic.nl/" target="_blank" rel="noopener" class="btn btn-sm btn-brand me-2">
-                    <i class="las la-external-link-alt"></i> Live site
+                    <i class="las la-external-link-alt"></i> <span data-i18n="work.liveSite">Live website</span>
                   </a>
                 </div>
               </div>
@@ -294,14 +302,14 @@
               </div>
               <div class="card-custom-content p-4">
                 <h3 class="h4">Yaqeen</h3>
-                <p class="text-brand mb-2">Event ticketing & cultural commerce platform</p>
-                <p>
-                  Yaqeen is a bilingual event ticketing and commerce platform I helped build for a cultural
-                  organization, combining event discovery, ticket sales, QR-based check-in, an online shop,
-                  reviews, partner applications, and administration tools. My work focused on production hardening
-                  and core workflows, including offline-capable ticket scanning, server-authoritative coupon
-                  pricing, secure transactional emails, protected media delivery, and integrations with both
-                  Stripe and Mollie.
+                <p class="text-brand mb-2" data-i18n="work.yaqeen.tagline">Ticketing- & commerceplatform voor culturele evenementen</p>
+                <p data-i18n="work.yaqeen.desc">
+                  Yaqeen is een tweetalig ticketing- en commerceplatform voor evenementen waar ik aan heb
+                  meegewerkt voor een culturele organisatie, met evenementontdekking, ticketverkoop, QR-gebaseerde
+                  check-in, een webshop, reviews, partneraanvragen en beheertools. Mijn werk richtte zich op
+                  productiehardening en kernworkflows, waaronder offline ticketscanning, server-gezaghebbende
+                  couponprijzen, beveiligde transactionele e-mails, beveiligde media-aflevering en integraties met
+                  zowel Stripe als Mollie.
                 </p>
                 <div class="project-badges">
                   <span class="badge bg-primary">React</span>
@@ -320,7 +328,7 @@
                 </div>
                 <div class="project-links mt-4">
                   <a href="https://yaqeen-workshop.nl/" target="_blank" rel="noopener" class="btn btn-sm btn-brand me-2">
-                    <i class="las la-external-link-alt"></i> Live site
+                    <i class="las la-external-link-alt"></i> <span data-i18n="work.liveSite">Live website</span>
                   </a>
                 </div>
               </div>
@@ -334,14 +342,15 @@
               </div>
               <div class="card-custom-content p-4">
                 <h3 class="h4">LuchtLeven</h3>
-                <p class="text-brand mb-2">Privacy-First Personal Finance PWA</p>
-                <p>
-                  LuchtLeven is a privacy-first personal finance PWA I developed for multilingual, manual-first
-                  budgeting. The app combines transactions, category budgets, savings goals, recurring expenses,
-                  multi-currency accounts, and financial insights in an installable offline-capable experience. My
-                  work focused on the core product and production hardening, including flexible salary-cycle
-                  budgeting, robust CSV/JSON imports, consistent currency conversion, Arabic RTL support,
-                  AI-assisted insights, and per-user data security with Supabase.
+                <p class="text-brand mb-2" data-i18n="work.luchtleven.tagline">Privacyvriendelijke PWA voor persoonlijke financiën</p>
+                <p data-i18n="work.luchtleven.desc">
+                  LuchtLeven is een privacyvriendelijke PWA voor persoonlijke financiën die ik ontwikkelde voor
+                  meertalig, handmatig gericht budgetteren. De app combineert transacties, categoriebudgetten,
+                  spaardoelen, terugkerende uitgaven, multi-valuta rekeningen en financiële inzichten in een
+                  installeerbare, offline werkende ervaring. Mijn werk richtte zich op het kernproduct en
+                  productiehardening, waaronder flexibele salariscyclusbudgettering, robuuste CSV/JSON-imports,
+                  consistente valutaconversie, Arabische RTL-ondersteuning, AI-ondersteunde inzichten en
+                  gebruikersgebonden gegevensbeveiliging met Supabase.
                 </p>
                 <div class="project-badges">
                   <span class="badge bg-primary">React</span>
@@ -359,7 +368,7 @@
                 </div>
                 <div class="project-links mt-4">
                   <a href="https://luchtleven.com/landing" target="_blank" rel="noopener" class="btn btn-sm btn-brand me-2">
-                    <i class="las la-external-link-alt"></i> Live site
+                    <i class="las la-external-link-alt"></i> <span data-i18n="work.liveSite">Live website</span>
                   </a>
                 </div>
               </div>
@@ -373,14 +382,14 @@
               </div>
               <div class="card-custom-content p-4">
                 <h3 class="h4">TulipTale</h3>
-                <p class="text-brand mb-2">Automated publishing & fulfillment platform</p>
-                <p>
-                  TulipTale is an automated publishing and fulfillment platform I built for personalized bilingual
-                  children's books. The system turns incoming Etsy orders into generated stories and illustrations,
-                  builds RTL/LTR-aware book layouts, routes every book through human approval, exports print-ready
-                  PDFs, and submits approved orders for printing and shipping. I designed the workflow around
-                  idempotent integrations, reliable retries, consistent character generation, and minimal manual
-                  operation.
+                <p class="text-brand mb-2" data-i18n="work.tuliptale.tagline">Geautomatiseerd publicatie- & fulfillmentplatform</p>
+                <p data-i18n="work.tuliptale.desc">
+                  TulipTale is een geautomatiseerd publicatie- en fulfillmentplatform dat ik heb gebouwd voor
+                  gepersonaliseerde tweetalige kinderboeken. Het systeem zet binnenkomende Etsy-bestellingen om in
+                  gegenereerde verhalen en illustraties, bouwt RTL/LTR-bewuste boeklay-outs, stuurt elk boek door
+                  menselijke goedkeuring, exporteert printklare PDF's en dient goedgekeurde bestellingen in voor
+                  printen en verzending. Ik ontwierp de workflow rond idempotente integraties, betrouwbare
+                  herhalingen, consistente karaktergeneratie en minimale handmatige handelingen.
                 </p>
                 <div class="project-badges">
                   <span class="badge bg-primary">Next.js</span>
@@ -401,7 +410,7 @@
                 </div>
                 <div class="project-links mt-4">
                   <a href="https://www.tuliptale.com/" target="_blank" rel="noopener" class="btn btn-sm btn-brand me-2">
-                    <i class="las la-external-link-alt"></i> Live site
+                    <i class="las la-external-link-alt"></i> <span data-i18n="work.liveSite">Live website</span>
                   </a>
                 </div>
               </div>
@@ -417,8 +426,8 @@
       <div class="container">
         <div class="row pb-4" data-aos="fade-up">
           <div class="col-lg-8">
-            <p class="h6 text-brand">SKILLS</p>
-            <h2 class="h1">My technical skills & tools</h2>
+            <p class="h6 text-brand" data-i18n="skills.label">VAARDIGHEDEN</p>
+            <h2 class="h1" data-i18n="skills.heading">Mijn technische vaardigheden & tools</h2>
           </div>
         </div>
 
@@ -426,11 +435,11 @@
           <div class="col-md-6" data-aos="fade-up">
             <div class="card-custom rounded-4 bg-base shadow-effect">
               <div class="card-custom-content p-4">
-                <h3 class="h4"><i class="las la-code"></i> Programming languages</h3>
+                <h3 class="h4"><i class="las la-code"></i> <span data-i18n="skills.languages.heading">Programmeertalen</span></h3>
                 <div class="mb-3">
                   <div class="mb-2 d-flex justify-content-between">
                     <span>HTML5 & CSS3</span>
-                    <small class="text-brand">Advanced</small>
+                    <small class="text-brand" data-i18n="skills.level.advanced">Gevorderd</small>
                   </div>
                   <div class="progress" style="height: 5px;">
                     <div class="progress-bar" role="progressbar" aria-label="HTML5 & CSS3: Advanced, 85%" style="width: 85%"></div>
@@ -439,7 +448,7 @@
                 <div class="mb-3">
                   <div class="mb-2 d-flex justify-content-between">
                     <span>JavaScript</span>
-                    <small class="text-brand">Intermediate</small>
+                    <small class="text-brand" data-i18n="skills.level.intermediate">Gemiddeld</small>
                   </div>
                   <div class="progress" style="height: 5px;">
                     <div class="progress-bar" role="progressbar" aria-label="JavaScript: Intermediate, 75%" style="width: 75%"></div>
@@ -448,7 +457,7 @@
                 <div class="mb-3">
                   <div class="mb-2 d-flex justify-content-between">
                     <span>PHP</span>
-                    <small class="text-brand">Intermediate</small>
+                    <small class="text-brand" data-i18n="skills.level.intermediate">Gemiddeld</small>
                   </div>
                   <div class="progress" style="height: 5px;">
                     <div class="progress-bar" role="progressbar" aria-label="PHP: Intermediate, 70%" style="width: 70%"></div>
@@ -457,7 +466,7 @@
                 <div class="mb-3">
                   <div class="mb-2 d-flex justify-content-between">
                     <span>SQL</span>
-                    <small class="text-brand">Intermediate</small>
+                    <small class="text-brand" data-i18n="skills.level.intermediate">Gemiddeld</small>
                   </div>
                   <div class="progress" style="height: 5px;">
                     <div class="progress-bar" role="progressbar" aria-label="SQL: Intermediate, 65%" style="width: 65%"></div>
@@ -466,7 +475,7 @@
                 <div class="mb-3">
                   <div class="mb-2 d-flex justify-content-between">
                     <span>TypeScript</span>
-                    <small class="text-brand">Intermediate</small>
+                    <small class="text-brand" data-i18n="skills.level.intermediate">Gemiddeld</small>
                   </div>
                   <div class="progress" style="height: 5px;">
                     <div class="progress-bar" role="progressbar" aria-label="TypeScript: Intermediate, 70%" style="width: 70%"></div>
@@ -479,7 +488,7 @@
           <div class="col-md-6" data-aos="fade-up">
             <div class="card-custom rounded-4 bg-base shadow-effect">
               <div class="card-custom-content p-4">
-                <h3 class="h4"><i class="las la-tools"></i> Development tools</h3>
+                <h3 class="h4"><i class="las la-tools"></i> <span data-i18n="skills.devtools.heading">Ontwikkeltools</span></h3>
                 <div class="tools-grid">
                   <div class="tool-item">
                     <i class="lab la-git"></i>
@@ -591,7 +600,7 @@
           <div class="col-md-6" data-aos="fade-up">
             <div class="card-custom rounded-4 bg-base shadow-effect">
               <div class="card-custom-content p-4">
-                <h3 class="h4">Other skills</h3>
+                <h3 class="h4" data-i18n="skills.other.heading">Overige vaardigheden</h3>
                 <div class="mb-3">
                   <div class="mb-2">Windows Server, Topdesk</div>
                   <div class="progress" style="height: 5px;">
@@ -599,25 +608,25 @@
                   </div>
                 </div>
                 <div class="mb-3">
-                  <div class="mb-2">Networking & Troubleshooting</div>
+                  <div class="mb-2" data-i18n="skills.other.networking">Netwerken & Probleemoplossing</div>
                   <div class="progress" style="height: 5px;">
                     <div class="progress-bar" role="progressbar" aria-label="Networking & Troubleshooting: 60%" style="width: 60%"></div>
                   </div>
                 </div>
                 <div class="mb-3">
-                  <div class="mb-2">REST APIs, Authentication, Serverless Functions</div>
+                  <div class="mb-2" data-i18n="skills.other.rest">REST API's, Authenticatie, Serverless Functions</div>
                   <div class="progress" style="height: 5px;">
                     <div class="progress-bar" role="progressbar" aria-label="REST APIs, Authentication, Serverless Functions: 70%" style="width: 70%"></div>
                   </div>
                 </div>
                 <div class="mb-3">
-                  <div class="mb-2">Responsive Web Design, SEO, Performance Optimization</div>
+                  <div class="mb-2" data-i18n="skills.other.responsive">Responsive webdesign, SEO, prestatie-optimalisatie</div>
                   <div class="progress" style="height: 5px;">
                     <div class="progress-bar" role="progressbar" aria-label="Responsive Web Design, SEO, Performance Optimization: 70%" style="width: 70%"></div>
                   </div>
                 </div>
                 <div class="mb-3">
-                  <div class="mb-2">E2E Testing, Analytics, Email Integrations, i18n/Localization</div>
+                  <div class="mb-2" data-i18n="skills.other.testing">E2E-testen, analytics, e-mailintegraties, i18n/lokalisatie</div>
                   <div class="progress" style="height: 5px;">
                     <div class="progress-bar" role="progressbar" aria-label="E2E Testing, Analytics, Email Integrations, i18n/Localization: 65%" style="width: 65%"></div>
                   </div>
@@ -629,66 +638,66 @@
           <div class="col-12" data-aos="fade-up">
             <div class="card-custom rounded-4 bg-base shadow-effect">
               <div class="card-custom-content p-4">
-                <h3 class="h4">Professional qualities</h3>
+                <h3 class="h4" data-i18n="skills.qualities.heading">Professionele kwaliteiten</h3>
                 <div class="row">
                   <div class="col-md-4 mb-3">
                     <div class="quality-item">
-                      <i class="las la-check-circle"></i> Logical Thinking
+                      <i class="las la-check-circle"></i> <span data-i18n="skills.quality.logical">Logisch denken</span>
                     </div>
                   </div>
                   <div class="col-md-4 mb-3">
                     <div class="quality-item">
-                      <i class="las la-check-circle"></i> Problem Solving
+                      <i class="las la-check-circle"></i> <span data-i18n="skills.quality.problem">Probleemoplossend vermogen</span>
                     </div>
                   </div>
                   <div class="col-md-4 mb-3">
                     <div class="quality-item">
-                      <i class="las la-check-circle"></i> Creativity
+                      <i class="las la-check-circle"></i> <span data-i18n="skills.quality.creativity">Creativiteit</span>
                     </div>
                   </div>
                   <div class="col-md-4 mb-3">
                     <div class="quality-item">
-                      <i class="las la-check-circle"></i> Learning Oriented
+                      <i class="las la-check-circle"></i> <span data-i18n="skills.quality.learning">Leergericht</span>
                     </div>
                   </div>
                   <div class="col-md-4 mb-3">
                     <div class="quality-item">
-                      <i class="las la-check-circle"></i> Teamwork
+                      <i class="las la-check-circle"></i> <span data-i18n="skills.quality.teamwork">Teamwork</span>
                     </div>
                   </div>
                   <div class="col-md-4 mb-3">
                     <div class="quality-item">
-                      <i class="las la-check-circle"></i> Self-Motivated
+                      <i class="las la-check-circle"></i> <span data-i18n="skills.quality.selfmotivated">Zelfgemotiveerd</span>
                     </div>
                   </div>
                   <div class="col-md-4 mb-3">
                     <div class="quality-item">
-                      <i class="las la-check-circle"></i> Detail-Oriented
+                      <i class="las la-check-circle"></i> <span data-i18n="skills.quality.detail">Detailgericht</span>
                     </div>
                   </div>
                   <div class="col-md-4 mb-3">
                     <div class="quality-item">
-                      <i class="las la-check-circle"></i> Adaptable
+                      <i class="las la-check-circle"></i> <span data-i18n="skills.quality.adaptable">Aanpasbaar</span>
                     </div>
                   </div>
                   <div class="col-md-4 mb-3">
                     <div class="quality-item">
-                      <i class="las la-check-circle"></i> Product-Minded
+                      <i class="las la-check-circle"></i> <span data-i18n="skills.quality.product">Productgericht</span>
                     </div>
                   </div>
                   <div class="col-md-4 mb-3">
                     <div class="quality-item">
-                      <i class="las la-check-circle"></i> Independent
+                      <i class="las la-check-circle"></i> <span data-i18n="skills.quality.independent">Zelfstandig</span>
                     </div>
                   </div>
                   <div class="col-md-4 mb-3">
                     <div class="quality-item">
-                      <i class="las la-check-circle"></i> Results-Driven
+                      <i class="las la-check-circle"></i> <span data-i18n="skills.quality.results">Resultaatgericht</span>
                     </div>
                   </div>
                   <div class="col-md-4 mb-3">
                     <div class="quality-item">
-                      <i class="las la-check-circle"></i> Strong Ownership
+                      <i class="las la-check-circle"></i> <span data-i18n="skills.quality.ownership">Sterk verantwoordelijkheidsgevoel</span>
                     </div>
                   </div>
                 </div>
@@ -705,15 +714,15 @@
       <div class="container">
         <div class="row pb-4" data-aos="fade-up">
           <div class="col-lg-8">
-            <p class="h6 text-brand">ABOUT</p>
-            <h2 class="h1">My education & experiance</h2>
+            <p class="h6 text-brand" data-i18n="about.label">OVER MIJ</p>
+            <h2 class="h1" data-i18n="about.heading">Mijn opleiding & ervaring</h2>
           </div>
         </div>
 
         <div class="row gy-5">
           <div class="col-lg-6">
-            <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">
-              Education
+            <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300" data-i18n="about.education.heading">
+              Opleiding
             </h3>
             <div class="row gy-4">
               <div class="col-12" data-aos="fade-up" data-aos-delay="600">
@@ -722,9 +731,9 @@
                   <p class="text-brand mb-2">
                     ROC Mondriaan Delft (2023 - 2026)
                   </p>
-                  <p class="mb-0">
-                    Completed Software Development program, focusing on programming,
-                    web development, and software engineering principles.
+                  <p class="mb-0" data-i18n="about.edu1.desc">
+                    Software Development opleiding afgerond, met focus op programmeren, webontwikkeling en
+                    software engineering principes.
                   </p>
                 </div>
               </div>
@@ -735,9 +744,9 @@
                   <p class="text-brand mb-2">
                     Techniek Collage Rotterdam (2021 - 2023)
                   </p>
-                  <p class="mb-0">
-                    Completed ICT Support program with focus on technical problem-solving,
-                    system maintenance, and customer support skills.
+                  <p class="mb-0" data-i18n="about.edu2.desc">
+                    ICT Support opleiding afgerond met focus op technische probleemoplossing, systeembeheer en
+                    klantenservice vaardigheden.
                   </p>
                 </div>
               </div>
@@ -748,9 +757,8 @@
                   <p class="text-brand mb-2">
                     Den Haag (2018 - 2021)
                   </p>
-                  <p class="mb-0">
-                    Completed practical education focusing on foundational skills and 
-                    work-oriented learning.
+                  <p class="mb-0" data-i18n="about.edu3.desc">
+                    Praktijkonderwijs afgerond, gericht op basisvaardigheden en werkgericht leren.
                   </p>
                 </div>
               </div>
@@ -761,8 +769,8 @@
                   <p class="text-brand mb-2">
                     Den Helder (2016 - 2017)
                   </p>
-                  <p class="mb-0">
-                    Completed International Transition Class program.
+                  <p class="mb-0" data-i18n="about.edu4.desc">
+                    Internationale Schakelklas (ISK) afgerond.
                   </p>
                 </div>
               </div>
@@ -770,17 +778,17 @@
           </div>
 
           <div class="col-lg-6">
-            <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">
-              Experience
+            <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300" data-i18n="about.experience.heading">
+              Werkervaring
             </h3>
             <div class="row gy-4">
               <div class="col-12" data-aos="fade-up" data-aos-delay="600">
                 <div class="bg-base p-4 rounded-4 shadow-effect">
                   <h4>360Fabriek</h4>
                   <p class="text-brand mb-2">Sep 2025 - Apr 2026</p>
-                  <p class="mb-0">
-                    • Designing UI/UX for 360Models, a 3D asset management and configurator platform<br>
-                    • Designing dashboards for organizations, users and product configurators
+                  <p class="mb-0" data-i18n-html="about.exp1.desc">
+                    • UI/UX ontwerpen voor 360Models, een 3D-assetbeheer- en configuratorplatform<br>
+                    • Dashboards ontwerpen voor organisaties, gebruikers en productconfiguratoren
                   </p>
                 </div>
               </div>
@@ -789,10 +797,10 @@
                 <div class="bg-base p-4 rounded-4 shadow-effect">
                   <h4>Local Support Medewerker - Rijkswaterstaat</h4>
                   <p class="text-brand mb-2">Delft (May 2022 - Apr 2023)</p>
-                  <p class="mb-0">
-                    • Solving technical problems via Topdesk<br>
-                    • Supporting users with laptop and software issues<br>
-                    • Improving customer and communication skills
+                  <p class="mb-0" data-i18n-html="about.exp2.desc">
+                    • Technische problemen oplossen via Topdesk<br>
+                    • Gebruikers ondersteunen bij laptop- en softwareproblemen<br>
+                    • Klantgerichtheid en communicatieve vaardigheden verbeteren
                   </p>
                 </div>
               </div>
@@ -801,9 +809,9 @@
                 <div class="bg-base p-4 rounded-4 shadow-effect">
                   <h4>Receptie (De Einder)</h4>
                   <p class="text-brand mb-2">Den Haag (Apr 2019 - May 2020)</p>
-                  <p class="mb-0">
-                    • Managing school agenda and appointments<br>
-                    • Welcoming visitors and providing administrative support
+                  <p class="mb-0" data-i18n-html="about.exp3.desc">
+                    • Schoolagenda en afspraken beheren<br>
+                    • Bezoekers ontvangen en administratieve ondersteuning bieden
                   </p>
                 </div>
               </div>
@@ -812,9 +820,9 @@
                 <div class="bg-base p-4 rounded-4 shadow-effect">
                   <h4>Detailhandel - Albert Heijn</h4>
                   <p class="text-brand mb-2">Den Haag (Feb 2019 - Mar 2020)</p>
-                  <p class="mb-0">
-                    • Customer service and inventory management<br>
-                    • Responsible for product restocking and inventory
+                  <p class="mb-0" data-i18n-html="about.exp4.desc">
+                    • Klantenservice en voorraadbeheer<br>
+                    • Verantwoordelijk voor het aanvullen van producten en voorraad
                   </p>
                 </div>
               </div>
@@ -823,9 +831,9 @@
                 <div class="bg-base p-4 rounded-4 shadow-effect">
                   <h4>McDonald's - Crew Member</h4>
                   <p class="text-brand mb-2">Den Haag (2018 - 2019)</p>
-                  <p class="mb-0">
-                    • Efficient service and hygiene management<br>
-                    • Customer service and team collaboration
+                  <p class="mb-0" data-i18n-html="about.exp5.desc">
+                    • Efficiënte service en hygiënebeheer<br>
+                    • Klantenservice en samenwerking in teamverband
                   </p>
                 </div>
               </div>
@@ -842,18 +850,19 @@
         <div class="row justify-content-center text-center">
           <div class="col-lg-8 pb-4" data-aos="fade-up">
             <p class="h6 text-brand">CV</p>
-            <h2 class="h1">My resume</h2>
-            <p class="lead mt-2">
-              Take a look at my full CV for a detailed overview of my education, experience, and skills.
+            <h2 class="h1" data-i18n="cv.heading">Mijn cv</h2>
+            <p class="lead mt-2" data-i18n="cv.lead">
+              Bekijk mijn volledige cv voor een gedetailleerd overzicht van mijn opleiding, ervaring en
+              vaardigheden.
             </p>
           </div>
 
           <div class="col-lg-8 d-flex flex-wrap justify-content-center gap-2" data-aos="fade-up" data-aos-delay="300">
             <a href="./cv/Khaled_Wadi_CV.pdf" target="_blank" rel="noopener" class="btn btn-brand">
-              <i class="las la-file-pdf"></i> Open my CV
+              <i class="las la-file-pdf"></i> <span data-i18n="cv.open">Open mijn cv</span>
             </a>
             <a href="./cv/Khaled_Wadi_CV.pdf" download="Khaled_Wadi_CV.pdf" class="btn btn-outline-light">
-              <i class="las la-download"></i> Download CV
+              <i class="las la-download"></i> <span data-i18n="cv.download">Download cv</span>
             </a>
           </div>
         </div>
@@ -867,27 +876,27 @@
         <div class="row justify-content-center text-center">
           <div class="col-lg-8 pb-4" data-aos="fade-up">
             <p class="h6 text-brand">CONTACT</p>
-            <h2 class="h1">Interested in working together? Let's talk</h2>
+            <h2 class="h1" data-i18n="contact.heading">Interesse in samenwerken? Laten we praten</h2>
           </div>
 
           <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
             <form id="contactForm" action="https://formspree.io/f/moveeeal" method="POST" class="row g-lg-3 gy-3">
               <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" placeholder="Enter your name" required />
+                <input type="text" name="name" class="form-control" placeholder="Vul je naam in" data-i18n-placeholder="contact.name.placeholder" required />
               </div>
               <div class="form-group col-md-6">
-                <input type="email" name="email" class="form-control" placeholder="Enter your email" required />
+                <input type="email" name="email" class="form-control" placeholder="Vul je e-mailadres in" data-i18n-placeholder="contact.email.placeholder" required />
               </div>
               <div class="form-group col-12">
-                <input type="text" name="subject" class="form-control" placeholder="Enter subject" required />
+                <input type="text" name="subject" class="form-control" placeholder="Vul onderwerp in" data-i18n-placeholder="contact.subject.placeholder" required />
               </div>
               <div class="form-group col-12">
-                <textarea name="message" rows="4" class="form-control" placeholder="Enter your message" required></textarea>
+                <textarea name="message" rows="4" class="form-control" placeholder="Typ je bericht" data-i18n-placeholder="contact.message.placeholder" required></textarea>
               </div>
               <div class="form-group col-12 d-grid">
                 <button type="submit" class="btn btn-brand">
                   <span class="spinner-border spinner-border-sm d-none me-2" role="status" aria-hidden="true"></span>
-                  Send message
+                  <span data-i18n="contact.send">Bericht verzenden</span>
                 </button>
               </div>
               <div class="col-12">
@@ -906,12 +915,12 @@
         <div class="row gy-4 justify-content-between">
           <div class="col-auto">
             <p class="mb-0">
-              Designed by <a href="#" class="fw-bold">KHALED</a>
+              <span data-i18n="footer.designedBy">Ontworpen door</span> <a href="#" class="fw-bold">KHALED</a>
             </p>
           </div>
           <div class="col-auto">
             <div class="social-icons">
-              <a href="mailto:khaledwadi747@gmail.com" aria-label="Email"><i class="lab la la-envelope"></i></a>
+              <a href="mailto:khaledwadi747@gmail.com" aria-label="E-mail" data-i18n-aria="footer.emailAria"><i class="lab la la-envelope"></i></a>
               <a href="https://www.linkedin.com/in/khaled-wadi-16b55b235" aria-label="LinkedIn"><i class="lab la-linkedin"></i></a>
               <a href="https://www.instagram.com/k5r.0/" aria-label="Instagram"><i class="lab la-instagram"></i></a>
               <a href="https://github.com/K-wadi" aria-label="GitHub"><i class="lab la-github"></i></a>
@@ -927,23 +936,24 @@
   <script src="./js/bootstrap.bundle.min.js"></script>
   <script src="./js/aos.js"></script>
   <script src="./js/main.js"></script>
+  <script src="./js/i18n.js"></script>
   <script>
   document.getElementById('contactForm').addEventListener('submit', async function(e) {
       e.preventDefault();
-      
+
       const form = this;
       const submitBtn = form.querySelector('button[type="submit"]');
       const spinner = submitBtn.querySelector('.spinner-border');
       const formMessage = document.getElementById('formMessage');
-      
+
       // Reset previous state
       formMessage.classList.add('d-none');
       formMessage.classList.remove('alert-success', 'alert-danger');
-      
+
       // Show loading state
       submitBtn.disabled = true;
       spinner.classList.remove('d-none');
-      
+
       try {
           const response = await fetch('https://formspree.io/f/moveeeal', {
               method: 'POST',
@@ -952,18 +962,18 @@
                   'Accept': 'application/json'
               }
           });
-          
+
           const result = await response.json();
-          
+
           if (response.ok) {
               // Success
-              formMessage.textContent = 'Thank you for your message! I will get back to you soon.';
+              formMessage.textContent = window.t ? window.t('contact.success') : 'Thank you for your message! I will get back to you soon.';
               formMessage.classList.remove('d-none');
               formMessage.classList.add('alert-success');
               form.reset();
           } else {
               // Error
-              throw new Error(result.error || 'Something went wrong. Please try again.');
+              throw new Error(result.error || (window.t ? window.t('contact.error') : 'Something went wrong. Please try again.'));
           }
       } catch (error) {
           console.error('Error:', error);
