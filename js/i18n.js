@@ -201,6 +201,14 @@
       if (value !== null) el.setAttribute('content', value);
     });
 
+    document.querySelectorAll('[data-cv-href-en]').forEach(function (el) {
+      var href = el.getAttribute(lang === 'en' ? 'data-cv-href-en' : 'data-cv-href-nl');
+      if (href) el.setAttribute('href', href);
+
+      var downloadName = el.getAttribute(lang === 'en' ? 'data-cv-download-en' : 'data-cv-download-nl');
+      if (downloadName) el.setAttribute('download', downloadName);
+    });
+
     document.querySelectorAll('[data-lang-btn]').forEach(function (btn) {
       var isActive = btn.getAttribute('data-lang-btn') === lang;
       btn.classList.toggle('active', isActive);
