@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Khaled Wadi - CV</title>
+<style>
+  body{font-family:Arial,Helvetica,sans-serif;max-width:800px;margin:2rem auto;color:#1a1a1a;line-height:1.5}
+  header{background:#0f2e2e;color:#fff;padding:1.5rem}
+  header h1{margin:0;font-size:1.8rem}
+  header p{margin:.2rem 0}
+  h2{color:#0f2e2e;border-bottom:2px solid #c7e94c;padding-bottom:.2rem;margin-top:1.5rem}
+  .job h3{margin:0 0 .2rem}
+  .job .dates{float:right;font-weight:normal;color:#555}
+  .job ul{margin:.3rem 0 1rem}
+</style>
+</head>
+<body>
+<header>
+  <h1>Khaled Wadi</h1>
+  <p><strong>JUNIOR SOFTWARE DEVELOPER | ICT SUPPORT</strong></p>
+  <p>Den Haag, Netherlands | +31 6 43733706 | khaledwadi747@gmail.com</p>
+</header>
+
+<h2>Profile</h2>
+<p>I am a curious, solution-oriented person who enjoys understanding how things work and turning problems into practical solutions. I learn quickly, work carefully and stay calm when something needs to be figured out. I enjoy working with others, but I am also comfortable taking responsibility and working independently. I am naturally interested in technology and like challenging myself, learning new things and continuously improving the way I work.</p>
+
+<h2>Technical skills</h2>
+<ul>
+  <li><strong>Programming &amp; Web:</strong> HTML, CSS, JavaScript, PHP, SQL</li>
+  <li><strong>Tools &amp; Platforms:</strong> Git, GitHub, Bootstrap, Microsoft 365, TOPdesk</li>
+  <li><strong>Data &amp; Systems:</strong> MySQL, SQL Server (basic), Windows Server, networking fundamentals</li>
+  <li><strong>IT Support:</strong> Laptop and software troubleshooting, end-user support, incident handling</li>
+</ul>
+
+<h2>Professional qualities</h2>
+<p>Problem Solving | Analytical Thinking | User-Centered Mindset | Collaboration | Learning Agility | Ownership</p>
+
+<h2>Experience</h2>
+<div class="job">
+  <h3>360Fabriek | UI/UX Designer, Rotterdam <span class="dates">Sep 2025 - Apr 2026</span></h3>
+  <ul>
+    <li>Designed UI/UX for 360Models, a 3D asset management and product configurator platform.</li>
+    <li>Designed dashboards for organizations, users and product configurators.</li>
+  </ul>
+</div>
+<div class="job">
+  <h3>Rijkswaterstaat | IT Support Intern (Local Support), Delft <span class="dates">May 2022 - Apr 2023</span></h3>
+  <ul>
+    <li>Resolved technical incidents and service requests through TOPdesk, including laptop and software problems.</li>
+    <li>Supported end users by troubleshooting issues, explaining solutions clearly and providing status updates.</li>
+  </ul>
+</div>
+<div class="job">
+  <h3>De Einder | Reception &amp; Administration, Den Haag <span class="dates">Apr 2019 - May 2020</span></h3>
+  <ul>
+    <li>Managed the school agenda and appointments and supported daily administrative tasks.</li>
+    <li>Welcomed visitors, answered questions and helped maintain an organized reception environment.</li>
+  </ul>
+</div>
+<div class="job">
+  <h3>Albert Heijn | Retail Assistant, Den Haag <span class="dates">Feb 2019 - Mar 2020</span></h3>
+  <ul>
+    <li>Assisted customers and responded to questions in a fast-paced retail environment.</li>
+    <li>Replenished stock and helped maintain accurate inventory and well-organized shelves.</li>
+  </ul>
+</div>
+<div class="job">
+  <h3>McDonald's | Crew Member, Den Haag <span class="dates">2018 - 2019</span></h3>
+  <ul>
+    <li>Delivered efficient customer service in a fast-paced team environment.</li>
+    <li>Followed hygiene, food-safety and workplace procedures while supporting daily operations.</li>
+  </ul>
+</div>
+
+<h2>Education</h2>
+<div class="job">
+  <h3>ROC Mondriaan, Delft | MBO 4 Software Developer <span class="dates">2023 - 2026</span></h3>
+  <p>Software development programme focused on programming, databases and software development fundamentals.</p>
+</div>
+<div class="job">
+  <h3>Techniek College Rotterdam | MBO 2 ICT Support Medewerker <span class="dates">2021 - 2023</span></h3>
+  <p>ICT support programme focused on preparing laptops and phones, installing software, handling user reports and understanding hardware, software and networks. Diploma obtained.</p>
+</div>
+
+</body>
+</html>

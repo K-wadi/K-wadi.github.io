@@ -1,0 +1,44 @@
+Khaled Wadi
+JUNIOR SOFTWARE DEVELOPER | ICT-SUPPORT
+Den Haag, Nederland | +31 6 43733706
+khaledwadi747@gmail.com
+
+PROFIEL
+Ik ben een nieuwsgierige, oplossingsgerichte persoon die graag begrijpt hoe dingen werken en problemen omzet in praktische oplossingen. Ik leer snel, werk nauwkeurig en blijf rustig wanneer iets uitgezocht moet worden. Ik werk graag samen met anderen, maar neem ook zelfstandig verantwoordelijkheid. Technologie heeft van nature mijn interesse en ik daag mezelf graag uit, leer nieuwe dingen en verbeter continu de manier waarop ik werk.
+
+TECHNISCHE VAARDIGHEDEN
+Programmeren & Web: HTML, CSS, JavaScript, PHP, SQL
+Tools & Platformen: Git, GitHub, Bootstrap, Microsoft 365, TOPdesk
+Data & Systemen: MySQL, SQL Server (basis), Windows Server, basiskennis netwerken
+ICT-support: Laptop- en softwareproblemen oplossen, eindgebruikersondersteuning, incidentafhandeling
+
+PROFESSIONELE KWALITEITEN
+Probleemoplossend | Analytisch | Gebruikersgericht | Samenwerken | Leergierig | Verantwoordelijk
+
+WERKERVARING
+360Fabriek | UI/UX Designer, Rotterdam (sep 2025 - apr 2026)
+- Ontwierp de UI/UX voor 360Models, een platform voor 3D-assetbeheer en productconfiguratie.
+- Ontwierp dashboards voor organisaties, gebruikers en productconfigurators.
+
+Rijkswaterstaat | Stagiair IT Support (Local Support), Delft (mei 2022 - apr 2023)
+- Loste technische incidenten en serviceverzoeken op via TOPdesk, waaronder laptop- en softwareproblemen.
+- Ondersteunde eindgebruikers door problemen op te lossen, oplossingen duidelijk uit te leggen en statusupdates te geven.
+
+De Einder | Receptie & Administratie, Den Haag (apr 2019 - mei 2020)
+- Beheerde de schoolagenda en afspraken en ondersteunde dagelijkse administratieve werkzaamheden.
+- Ontving bezoekers, beantwoordde vragen en hielp de receptie georganiseerd te houden.
+
+Albert Heijn | Winkelmedewerker, Den Haag (feb 2019 - mrt 2020)
+- Hielp klanten en beantwoordde vragen in een dynamische winkelomgeving.
+- Vulde voorraden aan en hielp bij een correcte voorraad en overzichtelijke schappen.
+
+McDonald's | Crewmedewerker, Den Haag (2018 - 2019)
+- Bood snelle en klantgerichte service in een dynamische teamomgeving.
+- Volgde hygiene-, voedselveiligheids- en werkprocedures en ondersteunde de dagelijkse werkzaamheden.
+
+OPLEIDINGEN
+ROC Mondriaan, Delft | MBO 4 Software Developer (2023 - 2026)
+Opleiding Software Development gericht op programmeren, databases en de basis van softwareontwikkeling.
+
+Techniek College Rotterdam | MBO 2 Medewerker ICT Support (2021 - 2023)
+ICT-supportopleiding gericht op het voorbereiden van laptops en telefoons, software installeren, gebruikersmeldingen afhandelen en kennis van hardware, software en netwerken. Diploma behaald.

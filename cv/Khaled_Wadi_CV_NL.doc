@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Khaled Wadi - CV</title>
+<style>
+  body{font-family:Arial,Helvetica,sans-serif;max-width:800px;margin:2rem auto;color:#1a1a1a;line-height:1.5}
+  header{background:#0f2e2e;color:#fff;padding:1.5rem}
+  header h1{margin:0;font-size:1.8rem}
+  header p{margin:.2rem 0}
+  h2{color:#0f2e2e;border-bottom:2px solid #c7e94c;padding-bottom:.2rem;margin-top:1.5rem}
+  .job h3{margin:0 0 .2rem}
+  .job .dates{float:right;font-weight:normal;color:#555}
+  .job ul{margin:.3rem 0 1rem}
+</style>
+</head>
+<body>
+<header>
+  <h1>Khaled Wadi</h1>
+  <p><strong>JUNIOR SOFTWARE DEVELOPER | ICT-SUPPORT</strong></p>
+  <p>Den Haag, Nederland | +31 6 43733706 | khaledwadi747@gmail.com</p>
+</header>
+
+<h2>Profiel</h2>
+<p>Ik ben een nieuwsgierige, oplossingsgerichte persoon die graag begrijpt hoe dingen werken en problemen omzet in praktische oplossingen. Ik leer snel, werk nauwkeurig en blijf rustig wanneer iets uitgezocht moet worden. Ik werk graag samen met anderen, maar neem ook zelfstandig verantwoordelijkheid. Technologie heeft van nature mijn interesse en ik daag mezelf graag uit, leer nieuwe dingen en verbeter continu de manier waarop ik werk.</p>
+
+<h2>Technische vaardigheden</h2>
+<ul>
+  <li><strong>Programmeren &amp; Web:</strong> HTML, CSS, JavaScript, PHP, SQL</li>
+  <li><strong>Tools &amp; Platformen:</strong> Git, GitHub, Bootstrap, Microsoft 365, TOPdesk</li>
+  <li><strong>Data &amp; Systemen:</strong> MySQL, SQL Server (basis), Windows Server, basiskennis netwerken</li>
+  <li><strong>ICT-support:</strong> Laptop- en softwareproblemen oplossen, eindgebruikersondersteuning, incidentafhandeling</li>
+</ul>
+
+<h2>Professionele kwaliteiten</h2>
+<p>Probleemoplossend | Analytisch | Gebruikersgericht | Samenwerken | Leergierig | Verantwoordelijk</p>
+
+<h2>Werkervaring</h2>
+<div class="job">
+  <h3>360Fabriek | UI/UX Designer, Rotterdam <span class="dates">sep 2025 - apr 2026</span></h3>
+  <ul>
+    <li>Ontwierp de UI/UX voor 360Models, een platform voor 3D-assetbeheer en productconfiguratie.</li>
+    <li>Ontwierp dashboards voor organisaties, gebruikers en productconfigurators.</li>
+  </ul>
+</div>
+<div class="job">
+  <h3>Rijkswaterstaat | Stagiair IT Support (Local Support), Delft <span class="dates">mei 2022 - apr 2023</span></h3>
+  <ul>
+    <li>Loste technische incidenten en serviceverzoeken op via TOPdesk, waaronder laptop- en softwareproblemen.</li>
+    <li>Ondersteunde eindgebruikers door problemen op te lossen, oplossingen duidelijk uit te leggen en statusupdates te geven.</li>
+  </ul>
+</div>
+<div class="job">
+  <h3>De Einder | Receptie &amp; Administratie, Den Haag <span class="dates">apr 2019 - mei 2020</span></h3>
+  <ul>
+    <li>Beheerde de schoolagenda en afspraken en ondersteunde dagelijkse administratieve werkzaamheden.</li>
+    <li>Ontving bezoekers, beantwoordde vragen en hielp de receptie georganiseerd te houden.</li>
+  </ul>
+</div>
+<div class="job">
+  <h3>Albert Heijn | Winkelmedewerker, Den Haag <span class="dates">feb 2019 - mrt 2020</span></h3>
+  <ul>
+    <li>Hielp klanten en beantwoordde vragen in een dynamische winkelomgeving.</li>
+    <li>Vulde voorraden aan en hielp bij een correcte voorraad en overzichtelijke schappen.</li>
+  </ul>
+</div>
+<div class="job">
+  <h3>McDonald's | Crewmedewerker, Den Haag <span class="dates">2018 - 2019</span></h3>
+  <ul>
+    <li>Bood snelle en klantgerichte service in een dynamische teamomgeving.</li>
+    <li>Volgde hygiene-, voedselveiligheids- en werkprocedures en ondersteunde de dagelijkse werkzaamheden.</li>
+  </ul>
+</div>
+
+<h2>Opleidingen</h2>
+<div class="job">
+  <h3>ROC Mondriaan, Delft | MBO 4 Software Developer <span class="dates">2023 - 2026</span></h3>
+  <p>Opleiding Software Development gericht op programmeren, databases en de basis van softwareontwikkeling.</p>
+</div>
+<div class="job">
+  <h3>Techniek College Rotterdam | MBO 2 Medewerker ICT Support <span class="dates">2021 - 2023</span></h3>
+  <p>ICT-supportopleiding gericht op het voorbereiden van laptops en telefoons, software installeren, gebruikersmeldingen afhandelen en kennis van hardware, software en netwerken. Diploma behaald.</p>
+</div>
+
+</body>
+</html>

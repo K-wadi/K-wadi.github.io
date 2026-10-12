@@ -854,7 +854,7 @@
     <!-- //ABOUT -->
 
     <!-- CV -->
-    <section id="cv" class="full-height px-lg-5">
+    <section id="cv" class="full-height px-lg-5" style="position:relative;z-index:2">
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-lg-8 pb-4" data-aos="fade-up">
@@ -870,9 +870,20 @@
             <a href="./cv/Khaled_Wadi_CV_NL.pdf" data-cv-href-en="./cv/Khaled_Wadi_CV.pdf" data-cv-href-nl="./cv/Khaled_Wadi_CV_NL.pdf" target="_blank" rel="noopener" class="btn btn-brand">
               <i class="las la-file-pdf"></i> <span data-i18n="cv.open">Open mijn cv</span>
             </a>
-            <a href="./cv/Khaled_Wadi_CV_NL.pdf" data-cv-href-en="./cv/Khaled_Wadi_CV.pdf" data-cv-href-nl="./cv/Khaled_Wadi_CV_NL.pdf" download="Khaled_Wadi_CV_NL.pdf" data-cv-download-en="Khaled_Wadi_CV.pdf" data-cv-download-nl="Khaled_Wadi_CV_NL.pdf" class="btn btn-outline-light">
-              <i class="las la-download"></i> <span data-i18n="cv.download">Download cv</span>
-            </a>
+            <div class="dropdown">
+              <button class="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="las la-download"></i> <span data-i18n="cv.download">Download cv</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" data-cv-href-en="./cv/Khaled_Wadi_CV.pdf" data-cv-href-nl="./cv/Khaled_Wadi_CV_NL.pdf" data-cv-download-en="Khaled_Wadi_CV.pdf" data-cv-download-nl="Khaled_Wadi_CV_NL.pdf" href="./cv/Khaled_Wadi_CV_NL.pdf" download="Khaled_Wadi_CV_NL.pdf">PDF</a></li>
+                <li><a class="dropdown-item" data-cv-href-en="./cv/Khaled_Wadi_CV.doc" data-cv-href-nl="./cv/Khaled_Wadi_CV_NL.doc" data-cv-download-en="Khaled_Wadi_CV.doc" data-cv-download-nl="Khaled_Wadi_CV_NL.doc" href="./cv/Khaled_Wadi_CV_NL.doc" download="Khaled_Wadi_CV_NL.doc">DOC</a></li>
+                <li><a class="dropdown-item" data-cv-href-en="./cv/Khaled_Wadi_CV.html" data-cv-href-nl="./cv/Khaled_Wadi_CV_NL.html" data-cv-download-en="Khaled_Wadi_CV.html" data-cv-download-nl="Khaled_Wadi_CV_NL.html" href="./cv/Khaled_Wadi_CV_NL.html" download="Khaled_Wadi_CV_NL.html">HTML</a></li>
+                <li><a class="dropdown-item" data-cv-href-en="./cv/Khaled_Wadi_CV.md" data-cv-href-nl="./cv/Khaled_Wadi_CV_NL.md" data-cv-download-en="Khaled_Wadi_CV.md" data-cv-download-nl="Khaled_Wadi_CV_NL.md" href="./cv/Khaled_Wadi_CV_NL.md" download="Khaled_Wadi_CV_NL.md">Markdown</a></li>
+                <li><a class="dropdown-item" data-cv-href-en="./cv/Khaled_Wadi_CV.txt" data-cv-href-nl="./cv/Khaled_Wadi_CV_NL.txt" data-cv-download-en="Khaled_Wadi_CV.txt" data-cv-download-nl="Khaled_Wadi_CV_NL.txt" href="./cv/Khaled_Wadi_CV_NL.txt" download="Khaled_Wadi_CV_NL.txt">TXT</a></li>
+                <li><a class="dropdown-item" data-cv-href-en="./cv/Khaled_Wadi_CV.png" data-cv-href-nl="./cv/Khaled_Wadi_CV_NL.png" data-cv-download-en="Khaled_Wadi_CV.png" data-cv-download-nl="Khaled_Wadi_CV_NL.png" href="./cv/Khaled_Wadi_CV_NL.png" download="Khaled_Wadi_CV_NL.png">PNG</a></li>
+                <li><a class="dropdown-item" data-cv-href-en="./cv/Khaled_Wadi_CV.jpg" data-cv-href-nl="./cv/Khaled_Wadi_CV_NL.jpg" data-cv-download-en="Khaled_Wadi_CV.jpg" data-cv-download-nl="Khaled_Wadi_CV_NL.jpg" href="./cv/Khaled_Wadi_CV_NL.jpg" download="Khaled_Wadi_CV_NL.jpg">JPG</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

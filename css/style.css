@@ -4,4 +4,6 @@
 .lang-btn{padding:.35rem .7rem;font-size:.75rem;font-weight:700;font-family:var(--font-base),sans-serif;background:transparent;color:var(--color-body);border:none;line-height:1;transition:all .3s ease}
 .lang-btn.active{background-color:var(--color-brand);color:var(--color-base)}
 .lang-btn:not(.active):hover{color:var(--color-brand)}
-@media (max-width:360px){.lang-btn{padding:.3rem .55rem;font-size:.7rem}}
+@media (max-width:360px){.lang-btn{padding:.3rem .55rem;font-size:.7rem}}.dropdown-menu{background-color:var(--color-base);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:.5rem;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+.dropdown-item{color:var(--color-body);padding:.5rem 1rem;border-radius:4px;font-weight:600}
+.dropdown-item:hover,.dropdown-item:focus{background-color:var(--color-brand);color:var(--color-base)}
