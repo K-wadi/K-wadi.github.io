@@ -114,3 +114,17 @@ error: no LLM API key found (8 doc/paper/image file(s) need semantic extraction)
 Obsidian vault: 412 notes in /Users/khaled/Documents/GitHub/Khaled-OS/03 Projects/portfolio/
 Canvas: /Users/khaled/Documents/GitHub/Khaled-OS/03 Projects/portfolio/graph.canvas
 Open /Users/khaled/Documents/GitHub/Khaled-OS/03 Projects/portfolio/ as a vault in Obsidian.
+=== Mon Oct 12 14:51:56 CEST 2026 ===
+  warning: skill at /Users/khaled/.claude/skills/graphify is from graphify 0.9.50, package is 0.9.68. Run 'graphify install --platform claude' to update it (a plain 'graphify install' refreshes only the detected platform).
+  warning: skill at /Users/khaled/.agents/skills/graphify is from graphify 0.9.50, package is 0.9.68. Run 'graphify install --platform agents' to update it (a plain 'graphify install' refreshes only the detected platform).
+  warning: skill at /Users/khaled/.claude/skills/graphify is from graphify 0.9.50, package is 0.9.68. Run 'graphify install --platform claude' to update it (a plain 'graphify install' refreshes only the detected platform).
+  warning: skill at /Users/khaled/.agents/skills/graphify is from graphify 0.9.50, package is 0.9.68. Run 'graphify install --platform agents' to update it (a plain 'graphify install' refreshes only the detected platform).
+error: no LLM API key found (18 doc/paper/image file(s) need semantic extraction). Set GEMINI_API_KEY or GOOGLE_API_KEY (gemini), MOONSHOT_API_KEY (kimi), ANTHROPIC_API_KEY (claude), OPENAI_API_KEY (openai), DEEPSEEK_API_KEY (deepseek), or pass --backend. A code-only corpus needs no key. Or pass --code-only to index just the code (local AST, no key) and skip the non-code files.
+[graphify extract] incremental scan of /Users/khaled/Documents/GitHub/K-wadi.github.io
+[graphify extract] 1 code, 7 docs, 1 papers, 10 images changed; 16 unchanged; 0 deleted
+[graphify extract] 21 file(s) not classified (no supported extension or shebang), skipped: K-wadi.github.io.code-workspace, Khaled_Wadi_CV.doc, Khaled_Wadi_CV_NL.doc, aos.css, bootstrap.min.css, favicon.ico (+15 more)
+  warning: skill at /Users/khaled/.claude/skills/graphify is from graphify 0.9.50, package is 0.9.68. Run 'graphify install --platform claude' to update it (a plain 'graphify install' refreshes only the detected platform).
+  warning: skill at /Users/khaled/.agents/skills/graphify is from graphify 0.9.50, package is 0.9.68. Run 'graphify install --platform agents' to update it (a plain 'graphify install' refreshes only the detected platform).
+Obsidian vault: 412 notes in /Users/khaled/Documents/GitHub/Khaled-OS/03 Projects/portfolio/
+Canvas: /Users/khaled/Documents/GitHub/Khaled-OS/03 Projects/portfolio/graph.canvas
+Open /Users/khaled/Documents/GitHub/Khaled-OS/03 Projects/portfolio/ as a vault in Obsidian.
